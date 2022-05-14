@@ -138,6 +138,10 @@ body.choicePage .wrapper {
   margin: 20px auto 0;
 }
 
+.treelabel {
+	padding-top: 178px;
+}
+
 .bglayer {
   position: absolute;
   height: 396px;
