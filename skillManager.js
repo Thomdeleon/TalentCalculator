@@ -115,6 +115,40 @@ function updateTree(treeHandle) {
 	$(treeHandle).parent().children(".color").height(Math.min(80 + totalPoints * 59.0 / 2 + (totalPoints > 25 ? 21 : 0), 396));
 }
 
+function getTotalPointsPerTree(treeHandle) {
+	var totalPoints = 0;
+	$(treeHandle).find("div.tier").each(function(index) {
+		$(this).attr("data-invested", totalPoints); //the PREVIOUS tier running total
+		var tierLevel = parseInt($(this).attr("data-level"));
+		var tierTotal = 0;
+		$(this).children("div.skill").each(function(index) {
+			var p = parseInt($(this).attr("data-points"));
+			var m = parseInt($(this).attr("data-max"));
+			totalPoints += p;
+			tierTotal += p;
+			$(this).children("div.points").html(
+				p + "/" + m
+			);
+			$(this).children("div.points").css("visibility", (totalPoints < 2 * tierLevel) ? "hidden" : "visible");
+			$(this).removeClass("partial full");
+			if (p != 0) {
+				$(this).addClass(p < m ? "partial" : "full");
+			}
+			$(this).find("em").each(function(index) {
+				var mod = parseFloat($(this).attr("data-mod"));
+				if (isNaN(mod)) mod = 0;
+				var base = parseFloat($(this).attr("data-base"));
+				var sum = Math.round((Math.max(p,1) * base + mod)*100)/100; //Math.round to eliminate goofy float errors
+				var plus = ($(this).attr("data-base").substring(0,1) === "+" ? "+" : "");
+				$(this).html((sum > 0 ? plus : (sum == 0 ? "" : "-")) + sum);
+			});
+		});
+		$(this).attr("data-total", tierTotal);
+	});
+	
+	return totalPoints;
+}
+
 function updateStats() {
 	var total = 0;
 	$("span.totalPoints").each(function(index) {

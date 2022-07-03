@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Grandholme's Finest Talent Calculator: Dusk</title>
+	<link href='main.css' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Homenaje' rel='stylesheet' type='text/css'>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script src="skillManager.js"></script>
+</head>
+<body>
+
+<div class="header">
+	<div class="links"><a class="reset" href="index.html">&lt; go back</a> | <a href="Dusk.html" class="reset">reset</a> | <a href="#" class="permalink">Permalink to this build</a></div>
+	<h1>Grandholme's Finest Talent Calculator</h1>
+	<h2>Dusk Ornitier</h2>
+	<h3>Level <span class="charLevel">5</span> Sorcerer Runechild</h3>
+</div>
+<img unselectable="on" class="portrait" src="DuskPortrait.png" style="left: 30%;margin-left: -30%;">
+<div class="treeCollection">
+<div class="treewrapper red">
+	<div class="bglayer gray"></div>
+	<div class="bglayer color"></div>
+	<div class="tree">
+		<div class="tier" data-level="0" data-invested="0" data-total="0">
+			<div class="skill" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Spell Cleave</h2><span>Whenever you strike a target with a melee spell strike, your swing carries through, attacking one other target so long as that target is adjacent to you and your previous target.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="3"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Arcane Arts</h2><span>You know <em data-mod="1" data-base="2"></em> maneuvers from the Battle Master Fighter archetype. You use d<em data-mod="6" data-base="2"></em>s for these maneuvers and each maneuver costs <em data-mod="5" data-base="-1"></em> sorcery points to use.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Total Focus</h2><span>Once per short rest, you can choose to succeed on a concentration check that you would have failed.</span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="1" data-invested="0" data-total="0">
+			<div class="skill" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Quick Cantrip</h2><span>You can use quicken metamagic on any cantrip without using sorcery points.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Spell Weaving</h2><span>Performing a melee attack grants advantage on your next non-melee spell attack until the end of your next turn. Performing a non-melee spell attack grants advantage on your next melee attack until the end of your next turn.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Whirlwind Strike</h2><span>As an action, you can perform a single melee strike against all targets within 5 feet.</span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="2" data-invested="0" data-total="0">
+			<div class="skill" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Extra attack</h2><span>You can now attack two times per attack action. This does not stack with other sources of extra attack (such as from multiclassing).</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Spell Combo</h2><span>Whenever you perform four attack actions consecutively without repeating any attack in this sequence, you can cast a spell as a free action (e.g. whirlwind strike => quickened booming blade => attack of opportunity => attack action => free action spell).</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Spellburst</h2><span>When using the Spellsword ability, you can choose to end the spell you are concentrating on to deal maximum damage with that attack.</span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="3" data-invested="0" data-total="0">
+			<div class="skill push1" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Omnislash</h2><span>As an attack action, you can now hit multiple enemies with a single strike. Draw a line up to your movement, passing through each of your intended targets. You can perform a single melee attack against every enemy you pass through, provoking no attacks of opportunity while you pass through them.</span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="treelabel">
+			<div class="totalPoints">
+				<span class="totalPoints">0</span>
+			</div>
+			<legend>Spell Combat</legend>
+		</div>
+	</div>
+</div>
+
+<div class="treewrapper purple">
+	<div class="bglayer gray"></div>
+	<div class="bglayer color"></div>
+	<div class="tree">
+		<div class="tier" data-level="0" data-invested="0" data-total="0">
+			<div class="skill" data-points="0" data-max="3"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Broad Learning</h2><span>You can choose <em data-base="1"></em> spell(s) from another class' spell list 6th level and under and add it to your list of known spells.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Abundant Casting</h2><span>You can now use flexible casting to create any number of spell slots or sorcery points instead of just one as a bonus action. You can also now create 6th level spell slots by spending <em data-base="11"></em> sorcery points.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Echo Spell (Metamagic)</h2><span> Costs <em data-base="3"></em> sorcery points. An echo spell is cast again in the same spot one round later at the start of your next turn. Only instantaneous spells with an area of effect can be echoed. Targeted spells, spells with a duration, and spells requiring concentration cannot be echoed.</span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="1" data-invested="0" data-total="0">
+			<div class="skill" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Spell Efficiency</h2><span> The cost of creating new spell slots with sorcery points is reduced by <em data-base="1"></em>. Furthermore, whenever you convert spell slots to sorcery points, you gain <em data-base="1"></em> extra sorcery point for each spell slot converted.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Spell Critical</h2><span> All of your damaging spells are now capable of critically hitting. Critically hitting with a spell generates <em data-base="2"></em> sorcery points.<span class="perLevel"> per level</span>.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Intensify Spell (Metamagic)</h2><span>You can cast a spell as if you were using a higher level spell slot. Costs a number of sorcery points equal to the higher level spell slot (e.g. intensifying a level 3 fireball to level 9 costs 9 sorcery points).</span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="2" data-invested="0" data-total="0">
+			<div class="skill" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Widen Spell (Metamagic)</h2><span>Costs <em data-base="3"></em> sorcery points. Any spell with an area of effect has its diameter/length increased by 50%.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Metamagic Master</h2><span>You can now apply two metamagic options to the same spell, unless otherwise noted.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Maximize Spell (Metamagic)</h2><span>Costs <em data-base="3"></em> sorcery points. Any rolled values for this spell are maximized (e.g. maximum damage, maximum healing, etc).</span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="3" data-invested="0" data-total="0">
+			<div class="skill push1" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Twin Cosmic</h2><span>As a bonus action costing <em data-base="2"></em> sorcery points <span class="perLevel"> per level</span>, you can create a shadowy clone of yourself made out of pure arcane energy. This clone has an action and a bonus action which it can use to cast any spell or cantrip you know on your turn, using up your spell slots and arcane points. Maintaining this clone costs  <em data-base="1"></em> sorcery point per round after the first. This clone moves alongside you, similar to the spell mirror image, lacks physicality, and cannot be destroyed.</span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="treelabel">
+			<div class="column3 totalPoints">
+				<span class="totalPoints">0</span>
+			</div>
+			<legend>Sorcery</legend>
+		</div>
+	</div>
+</div>
+
+<div class="treewrapper blue">
+	<div class="bglayer gray"></div>
+	<div class="bglayer color"></div>
+	<div class="tree" unselectable="on">
+		<div class="tier" data-level="0" data-invested="0" data-total="0">
+			<div class="skill" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Adaptive Runes</h2><span>Choose a damage type. You now have resistance to that damage type. Additionally, whenever you are targeted with this damage type, you charge one rune. You may only charge one rune per turn in this manner. You may change which damage type you resist during a short rest/long rest. </span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Reflective Runes</h2><span>Whenever a spell attack is directed at you, you have a 1 in 4 chance of reflecting it. If reflected, you may redirect it towards a target of your choice by making a spell attack roll.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Runic Storage</h2><span>Once per day, you can store a spell inside your runes and activate it at any time as a reaction. You must expend a number of charged runes equal to the spell level you're holding. This spell storage dissipates after a long rest.</span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="1" data-invested="0" data-total="0">
+			<div class="skill" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Runic Resonance</h2><span>Whenever you cast a spell, you gain a number of charged runes equal to the spell level you cast.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Quicksilver Runes</h2><span>By spending <em data-base="3"></em> charged runes as a reaction, you gain the Freedom of Movement buff until the end of your next turn.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Runic Critical</h2><span>Increases your critical multiplier by <em data-base="1"></em>. Your critical strikes also charge a number of essence runes equal to your critical multiplier.</span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="2" data-invested="0" data-total="0">
+			<div class="skill" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Runic Blade</h2><span>As a bonus action, you can spend <em data-base="6"></em>charged runes to guarantee your next attack melee attack is a critical hit.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Spell Absorption</h2><span>By spending a number of charged runes equal to a spell that is targeting you, either directly or within its area of effect, you can attempt to counterspell it. If successful, the spell gets absorbed by your runes and can be later cast as if it were a known spell. You can only carry one absorbed spell at a time. This absorbed spell dissipates upon use or long rest.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Hardened Runes</h2><span> Your AC and saving throws increase by <em data-base="3"></em>.</span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="3" data-invested="0" data-total="0">
+			<div class="skill push1" data-points="0" data-max="1"><img src="icons/switch-weapon-4.svg">
+				<div class="description"><h2>Arcane Avatar</h2><span>You now have the benefits of the Arcane Exemplar Form passively. By spending <em data-base="6"></em> charged runes, you shift into an Arcane Avatar for 1 minute, gaining a flying speed of 80 feet, an attack increase of +2, resistance to all damage, and a healing factor of 1d8 hp per round. You are no longer exhausted after using your Perfect Arcane Avatar and can act as soon as this form ends. Once you use this feature, you must finish a long rest before you can use it again. </span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="treelabel">
+			<div class="column3 totalPoints">
+				<span class="totalPoints">0</span>
+			</div>
+			<legend>Runechild</legend>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="summary">
+	<h2>List of Skills:</h2>
+	<div class="descriptionContainer"></div>
+</div>
+
+</body>
+</html>
+
+<!--
+find:
+^(.+) \t[0-9]+ \t([0-9]+) \t(.+)$
+replace:
+\t\t<div class="skill" data-points="0" data-max="\2"><img src="icons/class-tree-\i(0)">\n\t\t\t<div class="description"><h2>\1</h2>\3</div>\n\t\t\t<div class="points"></div>\n\t\t</div>
+-->

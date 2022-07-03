@@ -160,6 +160,10 @@ body.choicePage .wrapper {
   background: url("skill_bg_blue_gray.png") transparent;
 }
 
+.purple .gray {
+  background: url("skill_bg_purple_gray.png") transparent;
+}
+
 .red .gray {
   background: url("skill_bg_red_gray.png") transparent;
 }
@@ -170,6 +174,10 @@ body.choicePage .wrapper {
 
 .blue .color {
   background: url("skill_bg_blue.png") transparent;
+}
+
+.purple .color {
+  background: url("skill_bg_purple.png") transparent;
 }
 
 .red .color {
@@ -404,6 +412,11 @@ legend {
 .red legend {
   color: #A93640;
 }
+
+.purple legend {
+  color: #af00c2;
+}
+
 
 a.biglink {
   display: inline-block;
