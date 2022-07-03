@@ -1,0 +1,13 @@
+---Background---
+Plain 
+323232
+
+rounded-square
+corner radius: 80
+
+frame width: 20
+B8CFE3
+
+
+---Foreground---
+B8CFE3 to 8494A3
