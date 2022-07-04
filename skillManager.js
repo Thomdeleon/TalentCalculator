@@ -112,7 +112,19 @@ function updateTree(treeHandle) {
 		$(this).attr("data-total", tierTotal);
 	});
 	$(treeHandle).find("span.totalPoints").html(totalPoints);
-	$(treeHandle).parentsUntil(".treeCollection").find(".passive").html(totalPoints);
+	//Begin passive skill functions
+	var actionSkill = $(treeHandle).parentsUntil(".treeCollection").find(".actionSkill");
+	actionSkill.find(".passive").html(totalPoints);
+	actionSkill.find("em").each(function(index) {
+		var base = parseFloat($(this).attr("passive-base"));
+		var mod = parseFloat($(this).attr("passive-mod"));
+		if (isNaN(mod)) mod = 0;
+		var sum = Math.round((Math.max(totalPoints,1) * base + mod)*100)/100;
+		var plus = ($(this).attr("passive-base").substring(0,1) === "+" ? "+" : "");
+		$(this).html((sum > 0 ? plus : (sum == 0 ? "" : "-")) + sum);
+	});
+	
+	//End passive skill functions
 	$(treeHandle).parent().children(".color").height(Math.min(80 + totalPoints * 59.0 / 2 + (totalPoints > 25 ? 21 : 0), 396));
 }
 
@@ -123,6 +135,15 @@ function updateStats() {
 	});
 	$("span.charLevel").html(20+total);
 	var descriptions = "";
+	//Begin passive skill functions
+	$("div.actionSkill").each(function(index) {
+		var p = parseInt($(this).find("div.passive").html());
+		if (p > 0) {
+			descriptions += "<div class='skillText'>" + $(this).children("div.description").html().replace("<h2>","<strong>").replace("</h2>", " " + p + ":</strong><div class='descriptionText'>") + "</div></div>";
+		}
+	});
+	
+	//End passive skill functions
 	$("div.skill").each(function(index) {
 		var p = parseInt($(this).attr("data-points"));
 		if (p > 0) {
