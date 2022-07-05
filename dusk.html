@@ -7,11 +7,41 @@
 	<link href='https://fonts.googleapis.com/css?family=Homenaje' rel='stylesheet' type='text/css'>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 	<script src="skillManager.js"></script>
+	
+	<script type="text/javascript">
+		window.onload = function() {
+			var a = document.getElementById("changeBackground");
+			let numBackgrounds = 3;
+			
+			var counter = Math.floor(Math.random()*numBackgrounds + 1);
+			
+			let changeBackground = function () {
+				let firstHalf = "background: #333 url('dusk-background-";
+				let secondHalf = ".jpg') no-repeat fixed center center; background-size: cover;";
+				
+				if (counter > numBackgrounds) {
+					counter = 1;
+				}
+				
+				var bgImage = firstHalf + counter + secondHalf;
+				document.body.style = bgImage;
+				
+				counter++;
+				return false;
+			}; 
+			
+			a.onclick = changeBackground;
+			
+			changeBackground();
+		}
+			
+	</script>
+	
 </head>
-<body class="duskPage">
+<body>
 
 <div class="header">
-	<div class="links"><a class="reset" href="index.html">&lt; go back</a> | <a href="Dusk.html" class="reset">reset</a> | <a href="#" class="permalink">Permalink to this build</a></div>
+	<div class="links"><a class="reset" href="index.html">&lt; go back</a> | <a href="Dusk.html" class="reset">reset</a> | <a id="changeBackground" class="reset" href="#">change background</a> | <a href="#" class="permalink">Permalink to this build</a></div>
 	<h1>Grandholme's Finest Talent Calculator</h1>
 	<h2>Dusk Ornitier</h2>
 	<h3>Level <span class="charLevel">5</span> Sorcerer Runechild</h3>
@@ -230,6 +260,8 @@
 
 </body>
 </html>
+
+
 
 <!--
 find:

@@ -10,17 +10,14 @@ html {
 }
 
 body {
+  background: #333 url("background.jpg") no-repeat fixed center center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   color: #eee;
   font: 15pt/17pt Homenaje, Impact, sans-serif;
   cursor: default;
   text-align: center;
-}
-
-body.duskPage {
-  background: #333 url("dusk-background.jpg") no-repeat fixed center center;
-  background-size: cover;
 }
 
 ::-moz-selection {
