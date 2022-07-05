@@ -391,10 +391,6 @@ legend {
   display: block;
 }
 
-.skill:hover .description:hover {
-  display: none;
-}
-
 .actionSkill:hover .description {
   display: block;
 }
