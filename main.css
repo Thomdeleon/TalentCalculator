@@ -389,6 +389,8 @@ legend {
 
 .skill:hover .description {
   display: block;
+  position: relative;
+  right: -50px;
 }
 
 .actionSkill:hover .description {
