@@ -274,7 +274,7 @@ legend {
   display: none;
   position: absolute;
   top: 0;
-  width: 200px;
+  width: 400px;
   z-index: 21;
   background-color: #111;
   color: white;
@@ -450,11 +450,12 @@ img.portrait {
   z-index: 1;
 }
 
-img.easterEgg {
+#biggsPortrait {
   position: absolute;
   position: fixed;
   height: 25%;
   right: 0%;
+  bottom: 0%;
   z-index: 0;
 }
 
