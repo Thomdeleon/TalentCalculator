@@ -7,25 +7,78 @@
 	<link href='https://fonts.googleapis.com/css?family=Homenaje' rel='stylesheet' type='text/css'>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 	<script src="skillManager.js"></script>
+	
+	<script type="text/javascript">
+		window.onload = function() {
+			var backgroundAnchor = document.getElementById("changeBackground");
+			var avatarAnchor = document.getElementById("changeAvatar");
+			var cocoPortrait = document.getElementById("cocoPortrait");
+			let numBackgrounds = 3;
+			let numAvatars = 2;
+			
+			var backgroundIter = Math.floor(Math.random()*numBackgrounds + 1);
+			var avatarIter = Math.floor(Math.random()*numAvatars + 1);
+			
+			let changeBackground = function () {
+				let firstHalf = "background: #333 url('dusk-background-";
+				let secondHalf = ".jpg') no-repeat fixed center center; background-size: cover;";
+				
+				if (backgroundIter > numBackgrounds) {
+					backgroundIter = 1;
+				}
+				
+				var bgImage = firstHalf + backgroundIter + secondHalf;
+				document.body.style = bgImage;
+				
+				backgroundIter++;
+				return false;
+			}; 
+			
+			let changeAvatar = function () {
+				if (avatarIter > numAvatars) {
+					avatarIter = 1;
+				}
+				
+				let avaImage = "cocoPortrait-" + avatarIter + ".png";
+				
+				cocoPortrait.setAttribute("src", avaImage);
+				
+				avatarIter++;
+				return false;
+			}
+			
+			backgroundAnchor.onclick = changeBackground;
+			avatarAnchor.onclick = changeAvatar;
+			
+			changeBackground();
+			changeAvatar();
+		}
+			
+	</script>
+	
 </head>
 <body>
 
 <div class="header">
-	<div class="links"><a class="reset" href="index.html">&lt; go back</a> | <a href="coco.html" class="reset">reset</a> | <a href="#" class="permalink">Permalink to this build</a></div>
+	<div class="links"><a class="reset" href="index.html">&lt; go back</a> | <a href="Coco.html" class="reset">reset</a> | <a id="changeBackground" class="reset" href="#">change background</a> | <a id="changeAvatar" class="reset" href="#">change avatar</a> | <a href="#" class="permalink">Permalink to this build</a></div>
 	<h1>Grandholme's Finest Talent Calculator</h1>
 	<h2>Coco Mintel</h2>
 	<h3>Level <span class="charLevel">5</span> Dervish Dancer</h3>
 </div>
-<img unselectable="on" class="portrait" src="cocoPortrait.png" style="left:30%;margin-left:30%;">
+<img id="cocoPortrait" unselectable="on" class="portrait" src="cocoPortrait-1.png" style="left:30%;margin-left:30%;">
 
 <div class="treeCollection">
 <div class="treewrapper red">
+	<div class="actionSkill"><img src="icons/dusk-spell-combat-passive.png" />
+		<div class="description"><h2>Spell Combat</h2>Passive Skill. Your speed increases by <em passive-mod="0" passive-base="5">0</em> feet</div>
+		<div class="passive points">0</div>
+	</div>
 	<div class="bglayer gray"></div>
 	<div class="bglayer color"></div>
 	<div class="tree">
 		<div class="tier" data-level="0" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-spell-cleave.svg">
-				<div class="description"><h2>Spell Cleave</h2><span>Whenever you strike a target with a melee spell strike, your swing carries through, attacking one other target so long as that target is adjacent to you and your previous target.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-whirlwind-strike.svg">
+				<div class="description"><h2>Whirlwind Strike</h2><span>As an action, you can perform your attack action against all targets within 5 feet.</span></div>
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="3"><img src="icons/dusk-arcane-arts.svg">
@@ -46,8 +99,8 @@
 				<div class="description"><h2>Spell Weaving</h2><span>Performing a melee attack grants advantage on your next non-melee spell attack until the end of your next turn. Performing a non-melee spell attack grants advantage on your next melee attack until the end of your next turn.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-whirlwind-strike.svg">
-				<div class="description"><h2>Whirlwind Strike</h2><span>As an action, you can perform a single melee strike against all targets within 5 feet.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-improved-spellstrike.svg">
+				<div class="description"><h2>Improved Spellstrike</h2><span>Whenever you would make a melee attack against a single target, you may instead choose to cast a melee cantrip instead.</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
@@ -81,12 +134,16 @@
 </div>
 
 <div class="treewrapper purple">
+	<div class="actionSkill"><img src="icons/dusk-sorcery-passive.png" />
+		<div class="description"><h2>Sorcery</h2>Passive Skill. You are granted a total of <em passive-mod="0" passive-base="1">0</em> metamagic options OR sorcery points, your choice each level.</div>
+		<div class="passive points">0</div>
+	</div>
 	<div class="bglayer gray"></div>
 	<div class="bglayer color"></div>
 	<div class="tree">
 		<div class="tier" data-level="0" data-invested="0" data-total="0">
 			<div class="skill" data-points="0" data-max="3"><img src="icons/dusk-broad-learning.svg">
-				<div class="description"><h2>Broad Learning</h2><span>You can choose <em data-base="1"></em> spell(s) from another class' spell list 6th level and under and add it to your list of known spells.</span></div>
+				<div class="description"><h2>Arcane Studies</h2><span>You can choose a spell from the wizard class' spell list <em data-mod="3" data-base="2"></em>th level and under and add it to your list of known spells.</span></div>
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-abundant-casting.svg">
@@ -142,6 +199,10 @@
 </div>
 
 <div class="treewrapper blue">
+	<div class="actionSkill"><img src="icons/dusk-runechild-passive.png" />
+		<div class="description"><h2>Runechild</h2>Passive Skill. The amount of damage you can mitigate with Glyph of Aegis increases by <em passive-mod="0" passive-base="1">0</em> per charged rune.</div>
+		<div class="passive points">0</div>
+	</div>
 	<div class="bglayer gray"></div>
 	<div class="bglayer color"></div>
 	<div class="tree" unselectable="on">
@@ -218,6 +279,8 @@
 
 </body>
 </html>
+
+
 
 <!--
 find:
