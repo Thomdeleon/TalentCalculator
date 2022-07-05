@@ -10,29 +10,54 @@
 	
 	<script type="text/javascript">
 		window.onload = function() {
-			var a = document.getElementById("changeBackground");
-			let numBackgrounds = 3;
+			let backgroundAnchor = document.getElementById("changeBackground");
+			let avatarAnchor = document.getElementById("changeAvatar");
+			let portrait = document.getElementById("duskPortrait");
+			let numBackgrounds = 4;
+			let numAvatars = 2;
 			
-			var counter = Math.floor(Math.random()*numBackgrounds + 1);
+			var backgroundIter = 2;
+			var avatarIter = Math.floor(Math.random()*numAvatars + 1);
 			
 			let changeBackground = function () {
-				let firstHalf = "background: #333 url('dusk-background-";
+				let firstHalf = "background: #333 url('assets/background-";
 				let secondHalf = ".jpg') no-repeat fixed center center; background-size: cover;";
 				
-				if (counter > numBackgrounds) {
-					counter = 1;
+				if (backgroundIter > numBackgrounds) {
+					backgroundIter = 1;
 				}
 				
-				var bgImage = firstHalf + counter + secondHalf;
+				var bgImage = firstHalf + backgroundIter + secondHalf;
 				document.body.style = bgImage;
 				
-				counter++;
+				backgroundIter++;
 				return false;
 			}; 
 			
-			a.onclick = changeBackground;
+			let changeAvatar = function () {
+				if (avatarIter > numAvatars) {
+					avatarIter = 1;
+				}
+				
+				let avaImage = "assets/duskPortrait-" + avatarIter + ".png";
+				
+				const avaPositions = [
+					"left:30%;margin-left:-35%;",
+					"left:30%;margin-left:30%;"
+				];
+				
+				portrait.setAttribute("src", avaImage);
+				portrait.setAttribute("style", avaPositions[avatarIter-1]);
+				
+				avatarIter++;
+				return false;
+			};
+			
+			backgroundAnchor.onclick = changeBackground;
+			avatarAnchor.onclick = changeAvatar;
 			
 			changeBackground();
+			changeAvatar();
 		}
 			
 	</script>
@@ -41,12 +66,12 @@
 <body>
 
 <div class="header">
-	<div class="links"><a class="reset" href="index.html">&lt; go back</a> | <a href="Dusk.html" class="reset">reset</a> | <a id="changeBackground" class="reset" href="#">change background</a> | <a href="#" class="permalink">Permalink to this build</a></div>
+	<div class="links"><a class="reset" href="index.html">&lt; go back</a> | <a href="Dusk.html" class="reset">reset</a> | <a id="changeBackground" class="reset" href="#">change background</a> | <a id="changeAvatar" class="reset" href="#">change avatar</a> | <a href="#" class="permalink">Permalink to this build</a></div>
 	<h1>Grandholme's Finest Talent Calculator</h1>
 	<h2>Dusk Ornitier</h2>
 	<h3>Level <span class="charLevel">5</span> Sorcerer Runechild</h3>
 </div>
-<img unselectable="on" class="portrait" src="duskPortrait.png" style="left: 30%;margin-left: -35%;">
+<img id="duskPortrait" unselectable="on" class="portrait" src="assets/duskPortrait-1.png" style="left: 30%;margin-left: -35%;">
 
 <div class="treeCollection">
 <div class="treewrapper red">

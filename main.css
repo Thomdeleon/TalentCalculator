@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background: #333 url("background.jpg") no-repeat fixed center center;
+  background: #333 url("assets/background-1.jpg") no-repeat fixed center center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -50,7 +50,7 @@ em {
 }
 
 body.choicePage {
-  background: #333 url("background.jpg") no-repeat fixed center center;
+  background: #333 url("assets/background-1.jpg") no-repeat fixed center center;
   background-size: cover;
   display: table;
   width: 100%;

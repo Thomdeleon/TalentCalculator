@@ -10,17 +10,17 @@
 	
 	<script type="text/javascript">
 		window.onload = function() {
-			var backgroundAnchor = document.getElementById("changeBackground");
-			var avatarAnchor = document.getElementById("changeAvatar");
-			var cocoPortrait = document.getElementById("cocoPortrait");
-			let numBackgrounds = 3;
+			let backgroundAnchor = document.getElementById("changeBackground");
+			let avatarAnchor = document.getElementById("changeAvatar");
+			let cocoPortrait = document.getElementById("cocoPortrait");
+			let numBackgrounds = 4;
 			let numAvatars = 2;
 			
-			var backgroundIter = Math.floor(Math.random()*numBackgrounds + 1);
+			var backgroundIter = 3;
 			var avatarIter = Math.floor(Math.random()*numAvatars + 1);
 			
 			let changeBackground = function () {
-				let firstHalf = "background: #333 url('dusk-background-";
+				let firstHalf = "background: #333 url('assets/background-";
 				let secondHalf = ".jpg') no-repeat fixed center center; background-size: cover;";
 				
 				if (backgroundIter > numBackgrounds) {
@@ -39,9 +39,15 @@
 					avatarIter = 1;
 				}
 				
-				let avaImage = "cocoPortrait-" + avatarIter + ".png";
+				let avaImage = "assets/cocoPortrait-" + avatarIter + ".png";
+				
+				const avaPositions = [
+					"left:30%;margin-left:-35%;",
+					"left:30%;margin-left:30%;"
+				];
 				
 				cocoPortrait.setAttribute("src", avaImage);
+				cocoPortrait.setAttribute("style", avaPositions[avatarIter-1]);
 				
 				avatarIter++;
 				return false;
