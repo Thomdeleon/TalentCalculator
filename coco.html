@@ -12,7 +12,7 @@
 		window.onload = function() {
 			let backgroundAnchor = document.getElementById("changeBackground");
 			let avatarAnchor = document.getElementById("changeAvatar");
-			let cocoPortrait = document.getElementById("cocoPortrait");
+			let portrait = document.getElementById("cocoPortrait");
 			let numBackgrounds = 4;
 			let numAvatars = 2;
 			
@@ -46,8 +46,8 @@
 					"left:30%;margin-left:30%;"
 				];
 				
-				cocoPortrait.setAttribute("src", avaImage);
-				cocoPortrait.setAttribute("style", avaPositions[avatarIter-1]);
+				portrait.setAttribute("src", avaImage);
+				portrait.setAttribute("style", avaPositions[avatarIter-1]);
 				
 				avatarIter++;
 				return false;
