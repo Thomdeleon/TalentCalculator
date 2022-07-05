@@ -13,11 +13,14 @@
 			let backgroundAnchor = document.getElementById("changeBackground");
 			let avatarAnchor = document.getElementById("changeAvatar");
 			let portrait = document.getElementById("cocoPortrait");
-			let numBackgrounds = 4;
+			let biggsPortrait = document.getElementById("biggsPortrait");
+			let numBackgrounds = 6;
 			let numAvatars = 2;
+			let biggsChance = 20;
 			
 			var backgroundIter = 3;
 			var avatarIter = Math.floor(Math.random()*numAvatars + 1);
+			var biggsIter = Math.floor(Math.random()*biggsChance + 1);
 			
 			let changeBackground = function () {
 				let firstHalf = "background: #333 url('assets/background-";
@@ -50,6 +53,18 @@
 				portrait.setAttribute("style", avaPositions[avatarIter-1]);
 				
 				avatarIter++;
+				
+				if (biggsIter == biggsChance) {
+					let biggsImage = "assets/biggsPortrait.png";
+					
+					biggsPortrait.setAttribute("src", biggsImage);
+					
+				} else {
+					biggsPortrait.setAttribute("src", "");
+				}
+				
+				biggsIter = Math.floor(Math.random()*biggsChance + 1);
+				
 				return false;
 			}
 			
@@ -72,6 +87,7 @@
 	<h3>Level <span class="charLevel">5</span> Dervish Dancer</h3>
 </div>
 <img id="cocoPortrait" unselectable="on" class="portrait" src="cocoPortrait-1.png" style="left:30%;margin-left:30%;">
+<img id="biggsPortrait" unselectable="on" class="easterEgg" src="" style="left:30%;margin-left:30%;">
 
 <div class="treeCollection">
 <div class="treewrapper red">

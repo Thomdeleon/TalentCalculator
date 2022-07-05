@@ -452,6 +452,14 @@ img.portrait {
   z-index: 0;
 }
 
+img.easterEgg {
+  position: absolute;
+  position: fixed;
+  height: 35%;
+  bottom: 100;
+  z-index: 0;
+}
+
 .stamp {
   display: block;
   color: orangered;
