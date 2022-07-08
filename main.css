@@ -170,6 +170,10 @@ body.choicePage .wrapper {
   background: url("skill_bg_red_gray.png") transparent;
 }
 
+.orange .gray {
+  background: url("skill_bg_orange_gray.png") transparent;
+}
+
 .green .color {
   background: url("skill_bg_green.png") transparent;
 }
@@ -184,6 +188,10 @@ body.choicePage .wrapper {
 
 .red .color {
   background: url("skill_bg_red.png") transparent;
+}
+
+.orange .color {
+  background: url("skill_bg_orange.png") transparent;
 }
 
 .skill {
@@ -417,6 +425,9 @@ legend {
   color: #af00c2;
 }
 
+.orange legend {
+  color: #aa7024;
+}
 
 a.biglink {
   display: inline-block;
