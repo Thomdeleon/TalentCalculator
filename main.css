@@ -477,3 +477,12 @@ img.portrait {
 .passive {
 	pointer-events: none;
 }
+
+.extra-text {
+	color: #FFFF00;
+}
+
+.hidden {
+	visibility: hidden;
+}
+

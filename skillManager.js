@@ -112,6 +112,7 @@ function updateTree(treeHandle) {
 		$(this).attr("data-total", tierTotal);
 	});
 	$(treeHandle).find("span.totalPoints").html(totalPoints);
+	
 	//Begin passive skill functions
 	var actionSkill = $(treeHandle).parentsUntil(".treeCollection").find(".actionSkill");
 	actionSkill.find(".passive").html(totalPoints);
@@ -123,8 +124,28 @@ function updateTree(treeHandle) {
 		var plus = ($(this).attr("passive-base").substring(0,1) === "+" ? "+" : "");
 		$(this).html((sum > 0 ? plus : (sum == 0 ? "" : "-")) + sum);
 	});
-	
 	//End passive skill functions
+	
+	//Begin keyTalent skill functions
+	var keyTalent = $(treeHandle).find(".keyTalent");
+	if (keyTalent.length === 1) {
+		let pointsInvested = parseFloat(keyTalent.first().attr("data-points"));
+		if (pointsInvested > 0) {
+			$(treeHandle).find("div.extra-text").each(function(index) {
+				if ($(this).hasClass("hidden")) {
+					$(this).removeClass("hidden");
+				}
+			});
+		} else if (pointsInvested == 0) {
+			$(treeHandle).find("div.extra-text").each(function(index) {
+				if (!$(this).hasClass("hidden")) {
+					$(this).addClass("hidden");
+				}
+			});
+		}
+	};
+	//End keyTalent skill functions
+	
 	$(treeHandle).parent().children(".color").height(Math.min(80 + totalPoints * 59.0 / 2 + (totalPoints > 25 ? 21 : 0), 396));
 }
 
