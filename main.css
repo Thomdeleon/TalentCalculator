@@ -155,43 +155,43 @@ body.choicePage .wrapper {
 }
 
 .green .gray {
-  background: url("skill_bg_green_gray.png") transparent;
+  background: url("assets/skill_bg_green_gray.png") transparent;
 }
 
 .blue .gray {
-  background: url("skill_bg_blue_gray.png") transparent;
+  background: url("assets/skill_bg_blue_gray.png") transparent;
 }
 
 .purple .gray {
-  background: url("skill_bg_purple_gray.png") transparent;
+  background: url("assets/skill_bg_purple_gray.png") transparent;
 }
 
 .red .gray {
-  background: url("skill_bg_red_gray.png") transparent;
+  background: url("assets/skill_bg_red_gray.png") transparent;
 }
 
 .orange .gray {
-  background: url("skill_bg_orange_gray.png") transparent;
+  background: url("assets/skill_bg_orange_gray.png") transparent;
 }
 
 .green .color {
-  background: url("skill_bg_green.png") transparent;
+  background: url("assets/skill_bg_green.png") transparent;
 }
 
 .blue .color {
-  background: url("skill_bg_blue.png") transparent;
+  background: url("assets/skill_bg_blue.png") transparent;
 }
 
 .purple .color {
-  background: url("skill_bg_purple.png") transparent;
+  background: url("assets/skill_bg_purple.png") transparent;
 }
 
 .red .color {
-  background: url("skill_bg_red.png") transparent;
+  background: url("assets/skill_bg_red.png") transparent;
 }
 
 .orange .color {
-  background: url("skill_bg_orange.png") transparent;
+  background: url("assets/skill_bg_orange.png") transparent;
 }
 
 .skill {
