@@ -2,236 +2,283 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Borderlands 2 Skill Calculator: Mechromancer</title>
+	<title>Grandholme's Finest Talent Calculator: Bluhd</title>
 	<link href='main.css' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Homenaje' rel='stylesheet' type='text/css'>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 	<script src="skillManager.js"></script>
+	
+	<script type="text/javascript">
+		window.onload = function() {
+			let backgroundAnchor = document.getElementById("changeBackground");
+			let avatarAnchor = document.getElementById("changeAvatar");
+			let bluhdPortrait = document.getElementById("bluhdPortrait");
+			let leftDemonPortrait = document.getElementById("leftDemonPortrait");
+			let rightDemonPortrait = document.getElementById("rightDemonPortrait");
+			let numAvatars = 5;
+			var avatarIter = 1;
+			var backgroundIter = 6;		//Starting background
+			
+			let background = function () {
+				backgroundIter = changeBackground(backgroundIter);
+				return false;
+			}; 
+			
+			let changeAvatar = function () {
+				if (avatarIter > numAvatars) {
+					avatarIter = 1;
+				}
+				
+				let picNum = 1;
+				
+				let bluhdImage = "assets/bluhdPortrait-" + picNum + ".png";
+				let melodyImage = "assets/melodyPortrait-" + picNum + ".png";
+				let adeleImage = "assets/adelePortrait-" + picNum + ".png";
+				
+				bluhdPortrait.setAttribute("src", bluhdImage);
+				
+				if (avatarIter == 2) {
+					leftDemonPortrait.setAttribute("src", melodyImage);
+				} else if (avatarIter == 3) {
+					leftDemonPortrait.setAttribute("src", adeleImage);
+				} else if (avatarIter == 4) {
+					leftDemonPortrait.setAttribute("src", melodyImage);
+					rightDemonPortrait.setAttribute("src", adeleImage);
+				} else if (avatarIter == 5) {
+					leftDemonPortrait.setAttribute("src", adeleImage);
+					rightDemonPortrait.setAttribute("src", melodyImage);
+				} else {
+					leftDemonPortrait.setAttribute("src", "");
+					rightDemonPortrait.setAttribute("src", "");
+				}
+				
+				avatarIter++;
+				return false;
+			};
+			
+			backgroundAnchor.onclick = background;
+			avatarAnchor.onclick = changeAvatar;
+			
+			background();
+			changeAvatar();
+		}
+			
+	</script>
+	
 </head>
 <body>
 
 <div class="header">
-	<div class="links"><a class="reset" href="vanilla.html">&lt; go back</a> | <a class="reset" href="./">Home</a> | <a href="mechromancer.html" class="reset">reset</a> | <a href="#" class="permalink">Permalink to this build</a></div>
-	<h1>Borderlands<em>2</em> skill calculator <div class="stamp">(Vanilla)</div></h1>
-	<h2>Gaige</h2>
-	<h3>Level <span class="charLevel">5</span> Mechromancer</h3>
+	<div class="links"><a class="reset" href="index.html">&lt; go back</a> | <a href="bluhd.html" class="reset">reset</a> | <a id="changeBackground" class="reset" href="#">change background</a> | <a id="changeAvatar" class="reset" href="#">change avatar</a> | <a href="#" class="permalink">Permalink to this build</a></div>
+	<h1>Grandholme's Finest Talent Calculator</h1>
+	<h2>Bluhd Ochwnn</h2>
+	<h3>Level <span class="charLevel">5</span> Demonologist Warlock</h3>
 </div>
-<img unselectable="on" class="portrait" src="mechromancerPortrait.png">
-<div>
-	<div class="actionSkill"><img src="icons/mechromancer-actionskill.png" />
-		<div class="description"><h2>Summon Deathtrap</h2>Action Skill. Summon Deathtrap to fight for you. Cooldown: 60 seconds</div>
-		<div class="points">1/1</div>
-	</div>
-</div>
+<img id="bluhdPortrait" unselectable="on" class="portrait" src="assets/bluhdPortrait-1.png" style="left: 30%;margin-left: -35%;">
+<img id="leftDemonPortrait" unselectable="on" class="portrait" src="" style="left:20%;margin-left:30%;">
+<img id="rightDemonPortrait" unselectable="on" class="portrait" src="" style="left:40%;margin-left:30%;">
+
 <div class="treeCollection">
-<div class="treewrapper green">
-	<div class="bglayer gray"></div>
-	<div class="bglayer color"></div>
-	<div class="tree">
-		<div class="tier" data-level="0" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="icons/mechromancer-bestfriendsforever-0.png">
-				<div class="description"><h2>Close Enough</h2>Your bullets that hit walls or other objects have a <em data-base="10"></em>% chance<span class="perLevel"> per level</span> to ricochet toward a nearby enemy dealing 50% damage.</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill push1" data-points="0" data-max="5"><img src="icons/mechromancer-bestfriendsforever-1.png">
-				<div class="description"><h2>Cooking Up Trouble</h2>While your gun's magazine is full you regenerate <em data-base="0.4"></em>%<span class="perLevel"> per level</span> of maximum health per second.</div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="tier" data-level="1" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="icons/mechromancer-bestfriendsforever-2.png">
-				<div class="description"><h2>Fancy Mathematics</h2>Improves shield recharge delay (up to <em data-base="-14"></em>%<span class="perLevel"> per level</span>) and shield recharge rate (up to <em data-base="+12"></em>%<span class="perLevel"> per level</span>) based on how low your health is. The lower your health the greater the bonuses.</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/mechromancer-bestfriendsforever-3.png">
-				<div class="description"><h2>Buck Up</h2>Deathtrap Ability. Deathtrap restores the shields of one ally by 30%.</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill" data-points="0" data-max="5"><img src="icons/mechromancer-bestfriendsforever-4.png">
-				<div class="description"><h2>The Better Half</h2>When your magazine is at least half empty you gain fire rate <em data-base="+12"></em>%<span class="perLevel"> per level</span>.</div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="tier" data-level="2" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="icons/mechromancer-bestfriendsforever-5.png">
-				<div class="description"><h2>Potent as a Pony</h2>Increases maximum health for you (<em data-base="+4"></em>%<span class="perLevel"> per level</span>) and Deathtrap (<em data-base="+2"></em>%<span class="perLevel"> per level</span>).</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/mechromancer-bestfriendsforever-6.png">
-				<div class="description"><h2>Upshot Robot</h2>While Deathtrap is active, if you or Deathtrap kill an enemy it increases Deathtrap's duration by 5 seconds and grants both of you a 4% stackable melee damage bonus. Bonuses are lost when Deathtrap goes away.</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill" data-points="0" data-max="5"><img src="icons/mechromancer-bestfriendsforever-7.png">
-				<div class="description"><h2>Unstoppable Force</h2>Killing an enemy grants you <em data-base="+7"></em>%<span class="perLevel"> per level</span> movement speed and <em data-base="+0.8"></em>% shield regeneration<span class="perLevel"> per level</span> for a short while.</div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="tier" data-level="3" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/mechromancer-bestfriendsforever-8.png">
-				<div class="description"><h2>Explosive Clap</h2>Deathtrap Ability. Deathtrap causes an explosion in front of him, dealing explosive damage to all nearby enemies.</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill" data-points="0" data-max="5"><img src="icons/mechromancer-bestfriendsforever-9.png">
-				<div class="description"><h2>Made of Sterner Stuff</h2>You and Deathtrap gain <em data-base="+1"></em>%<span class="perLevel"> per level</span> damage reduction against all damage types. Deathtrap gains <em data-base="+3"></em>%<span class="perLevel"> per level</span> melee damage.</div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="tier" data-level="4" data-invested="0" data-total="0">
-			<div class="skill push1" data-points="0" data-max="5"><img src="icons/mechromancer-bestfriendsforever-10.png">
-				<div class="description"><h2>20% Cooler</h2>Increases the cooldown rate of your action skill by <em data-base="+6"></em>%<span class="perLevel"> per level</span>.</div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="tier" data-level="5" data-invested="0" data-total="0">
-			<div class="skill push1" data-points="0" data-max="1"><img src="icons/mechromancer-bestfriendsforever-11.png">
-				<div class="description"><h2>Sharing is Caring</h2>Grants a copy of your shield to Deathtrap. </div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="totalPoints">
-			<span class="totalPoints">0</span>
-		</div>
-		<legend>Best Friends Forever</legend>
-	</div>
-</div>
-<div class="treewrapper blue">
-	<div class="bglayer gray"></div>
-	<div class="bglayer color"></div>
-	<div class="tree">
-		<div class="tier" data-level="0" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="icons/mechromancer-littlebigtrouble-0.png">
-				<div class="description"><h2>More Pep</h2>Increases your chances of applying Burn (<em data-base="+2"></em>%<span class="perLevel"> per level</span>), Electrocute (<em data-base="+4"></em>%<span class="perLevel"> per level</span>), Corrode (<em data-base="+2"></em>%<span class="perLevel"> per level</span>), and Slag (<em data-base="+2"></em>%<span class="perLevel"> per level</span>) Status Effects.</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill push1" data-points="0" data-max="5"><img src="icons/mechromancer-littlebigtrouble-1.png">
-				<div class="description"><h2>Myelin</h2>Grants you <em data-base="+6"></em>%<span class="perLevel"> per level</span> Resistance to Shock Damage. Also increases your Shield Capacity by <em data-base="+3"></em>%<span class="perLevel"> per level</span>.</div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="tier" data-level="1" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="icons/mechromancer-littlebigtrouble-2.png">
-				<div class="description"><h2>Shock Storm</h2>Killing an enemy with a Critical Hit causes an Electric Storm, dealing Rank <span class="perLevel">(</span><em data-base="1"></em><span class="perLevel"> per level)</span> Electrocute Damage to nearby enemies. Electrical Storms are also caused by Deathtrap whenever he kills an enemy.</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/mechromancer-littlebigtrouble-3.png">
-				<div class="description"><h2>The Stare</h2>Deathtrap Ability. Deathtrap fires a laser beam and sweeps it across the battlefield, dealing Burn Damage and possibly Igniting enemies.</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill" data-points="0" data-max="5"><img src="icons/mechromancer-littlebigtrouble-4.png">
-				<div class="description"><h2>Strength of Five Gorillas</h2>Increases Melee Damage for you and Deathtrap by <em data-base="+3"></em>%<span class="perLevel"> per level</span>.</div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="tier" data-level="2" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="icons/mechromancer-littlebigtrouble-5.png">
-				<div class="description"><h2>Electrical Burn</h2>When your Electrocute Status Effects deal damage to enemies, there is a <em data-base="4"></em>%<span class="perLevel"> (per level)</span> chance they will burst into flames and take Burn Damage. The amount of Burn Damage is based on the Electrocute damage dealt.</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/mechromancer-littlebigtrouble-6.png">
-				<div class="description"><h2>Shock and "AAAGGGGHHH!"</h2>Reloading your gun causes an Electrical Explosion, damaging nearby enemies.</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill" data-points="0" data-max="5"><img src="icons/mechromancer-littlebigtrouble-7.png">
-				<div class="description"><h2>Evil Enchantress</h2>Kill Skill. Killing an enemy increases by <em data-base="+6"></em>%<span class="perLevel"> per level</span> the Damage that your Burn, Electrocute, and Corrode status effects deal for a short period of time.</div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="tier" data-level="3" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/mechromancer-littlebigtrouble-8.png">
-				<div class="description"><h2>One Two Boom</h2>Deathtrap Ability. Deathtrap shoots out an orb of energy at an enemy. If you shoot the orb it will explode, dealing massive Shock Damage to nearby enemies.</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill" data-points="0" data-max="5"><img src="icons/mechromancer-littlebigtrouble-9.png">
-				<div class="description"><h2>Wires Don't Talk</h2>Increases all Shock and Electrocute Damage that you inflict by <em data-base="+3"></em>%<span class="perLevel"> per level</span>.</div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="tier" data-level="4" data-invested="0" data-total="0">
-			<div class="skill push1" data-points="0" data-max="5"><img src="icons/mechromancer-littlebigtrouble-10.png">
-				<div class="description"><h2>Interspersed Outburst</h2>Not shooting an enemy for a short time grants you a stack of Interspersed Outburst (up to 5 stacks). The next time you shoot an enemy, all stacks of Interspersed Outburst are consumed and you deal Rank <span class="perLevel">(</span><em data-base="1"></em><span class="perLevel"> per level)</span> Slag Damage. The more stacks are consumed, the greater the chance of slagging the target.</div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="tier push1" data-level="5" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/mechromancer-littlebigtrouble-11.png">
-				<div class="description"><h2>Make it Sparkle</h2>Shooting Deathtrap with an elemental weapon charges him with that element, causing his melee attacks to deal additional damage of that element.</div>
-				<div class="points"></div>
-			</div>
-		</div>
-		<div class="totalPoints">
-			<span class="totalPoints">0</span>
-		</div>
-		<legend>Little Big Trouble</legend>
-	</div>
-</div>
 <div class="treewrapper red">
+	<div class="actionSkill"><img src="icons/quilak-evoker-passive.png" />
+		<div class="description"><h2>Evoker</h2>Passive Skill. Your speed increases by <em passive-mod="0" passive-base="5">0</em> feet</div>
+		<div class="passive points">0</div>
+	</div>
 	<div class="bglayer gray"></div>
 	<div class="bglayer color"></div>
 	<div class="tree">
 		<div class="tier" data-level="0" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="4"><img src="icons/mechromancer-orderedchaos-0.png">
-				<div class="description"><h2>Smaller, Lighter, Faster</h2>Increases you reload speed <em data-base="+6"></em>%<span class="perLevel"> per level</span> but decreases your magazine size <em data-base="-1"></em>%<span class="perLevel"> per level</span>.</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-whirlwind-strike.svg">
+				<div class="description"><h2>Whirlwind Strike</h2><span>As an action, you can perform your attack action against all targets within 5 feet.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill push1" data-points="0" data-max="1"><img src="icons/mechromancer-orderedchaos-1.png">
-				<div class="description"><h2>Anarchy</h2>Killing an enemy or fully emptying your gun's magazine while in combat grants you a stack of Anarchy (up to 150 stacks). For every stack of Anarchy you have, you gain +1.75% bonus gun damage, but your accuracy is decreased -1.75%. Prematurely reloading your guns removes all stacks of Anarchy. Anarchy stacks are quickly lost while in "Fight for Your Life."</div>
+			<div class="skill" data-points="0" data-max="3"><img src="icons/dusk-arcane-arts.svg">
+				<div class="description"><h2>Arcane Arts</h2><span>You know <em data-mod="1" data-base="2"></em> maneuvers from the Battle Master Fighter archetype. You use d<em data-mod="6" data-base="2"></em>s for these maneuvers and each maneuver costs <em data-mod="5" data-base="-1"></em> sorcery points to use.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-total-focus.svg">
+				<div class="description"><h2>Total Focus</h2><span>Once per short rest, you can choose to succeed on a concentration check that you would have failed.</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="1" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="icons/mechromancer-orderedchaos-2.png">
-				<div class="description"><h2>Preshrunk Cyberpunk</h2>Increases the maximum number of Anarchy stacks you can have by <em data-base="+50"></em><span class="perLevel"> per level</span>.</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-quick-cantrip.svg">
+				<div class="description"><h2>Quick Cantrip</h2><span>You can use quicken metamagic on any cantrip without using sorcery points.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/mechromancer-orderedchaos-3.png">
-				<div class="description"><h2>Robot Rampage</h2>Deathtrap Ability. Deathtrap lashes out with a flurry of attacks.</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-spell-weaving.svg">
+				<div class="description"><h2>Spell Weaving</h2><span>Performing a melee attack grants advantage on your next non-melee spell attack until the end of your next turn. Performing a non-melee spell attack grants advantage on your next melee attack until the end of your next turn.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="5"><img src="icons/mechromancer-orderedchaos-4.png">
-				<div class="description"><h2>Blood Soaked Shields</h2>Killing an enemy immediately restores <em data-base="20"></em>% of your shields<span class="perLevel"> per level</span>, but you lose <em data-base="1"></em>% of your current health<span class="perLevel"> per level</span>.</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-improved-spellstrike.svg">
+				<div class="description"><h2>Improved Spellstrike</h2><span>Whenever you would make a melee attack against a single target, you may instead choose to cast a melee cantrip instead.</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="2" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="5"><img src="icons/mechromancer-orderedchaos-5.png">
-				<div class="description"><h2>Annoyed Android</h2>Increases the movement speed of Deathtrap by <em data-base="+7"></em>%<span class="perLevel"> per level</span>.</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-extra-attack.svg">
+				<div class="description"><h2>Extra attack</h2><span>You can now attack two times per attack action. This does not stack with other sources of extra attack (such as from multiclassing).</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/mechromancer-orderedchaos-6.png">
-				<div class="description"><h2>Discord</h2>Prematurely reloading activates Discord granting you +65% accuracy, +25% fire rate, and 3% per second health regeneration. You constantly lose Anarchy stacks while Discord is active. Discord can be shut off by prematurely reloading again.</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-spell-combo.svg">
+				<div class="description"><h2>Spell Combo</h2><span>Whenever you perform four attack actions consecutively without repeating any attack in this sequence, you can cast a spell as a free action (e.g. whirlwind strike => quickened booming blade => attack of opportunity => attack action => free action spell).</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="5"><img src="icons/mechromancer-orderedchaos-7.png">
-				<div class="description"><h2>Typecast Iconoclast</h2>Whenever you get a stack of Anarchy there is a <em data-base="6"></em>%<span class="perLevel"> per level</span> chance you get an additional stack.</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-spellburst.svg">
+				<div class="description"><h2>Spellburst</h2><span>When using the Spellsword ability, you can choose to end the spell you are concentrating on to deal maximum damage with that attack.</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="3" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/mechromancer-orderedchaos-8.png">
-				<div class="description"><h2>Rational Anarchist</h2>If you have 0 stacks of Anarchy, then the next time you would gain an Anarchy stack you instead gain 25.</div>
-				<div class="points"></div>
-			</div>
-			<div class="skill" data-points="0" data-max="5"><img src="icons/mechromancer-orderedchaos-9.png">
-				<div class="description"><h2>Death From Above</h2>Shooting an enemy while in midair consumes <em data-base="1"></em> stacks of Anarchy <span class="perLevel">(1 per level)</span> and causes a Rank <span class="perLevel">(</span><em data-base="1"></em><span class="perLevel"> per level)</span> Digi-splosion, damaging nearby enemies.</div>
+			<div class="skill push1" data-points="0" data-max="1"><img src="icons/dusk-omnislash.svg">
+				<div class="description"><h2>Omnislash</h2><span>As an attack action, you can now hit multiple enemies with a single strike. Draw a line up to your movement, passing through each of your intended targets. You can perform a single melee attack against every enemy you pass through, provoking no attacks of opportunity while you pass through them.</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
-		<div class="tier" data-level="4" data-invested="0" data-total="0">
-			<div class="skill push1" data-points="0" data-max="5"><img src="icons/mechromancer-orderedchaos-10.png">
-				<div class="description"><h2>The Nth Degree</h2>Every <em data-mod="10" data-base="-1"></em> <span class="perLevel"> per level</span><sup></sup> bullets that hits an enemy, one of them will ricochet toward another nearby enemy.</div>
+		<div class="treelabel">
+			<div class="totalPoints">
+				<span class="totalPoints">0</span>
+			</div>
+			<legend>Evoker</legend>
+		</div>
+	</div>
+</div>
+
+<div class="treewrapper purple">
+	<div class="actionSkill"><img src="icons/quilak-controller-passive.png" />
+		<div class="description"><h2>Controller</h2>Passive Skill. You are granted a total of <em passive-mod="0" passive-base="1">0</em> metamagic options OR sorcery points, your choice each level.</div>
+		<div class="passive points">0</div>
+	</div>
+	<div class="bglayer gray"></div>
+	<div class="bglayer color"></div>
+	<div class="tree">
+		<div class="tier" data-level="0" data-invested="0" data-total="0">
+			<div class="skill" data-points="0" data-max="3"><img src="icons/dusk-broad-learning.svg">
+				<div class="description"><h2>Arcane Studies</h2><span>You can choose a spell from the wizard class' spell list <em data-mod="3" data-base="2"></em>th level and under and add it to your list of known spells.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-abundant-casting.svg">
+				<div class="description"><h2>Abundant Casting</h2><span>You can now use flexible casting to create any number of spell slots or sorcery points instead of just one as a bonus action. You can also now create 6th level spell slots by spending <em data-base="11"></em> sorcery points.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-echo-spell.svg">
+				<div class="description"><h2>Echo Spell (Metamagic)</h2><span> Costs <em data-base="3"></em> sorcery points. An echo spell is cast again in the same spot one round later at the start of your next turn. Only instantaneous spells with an area of effect can be echoed. Targeted spells, spells with a duration, and spells requiring concentration cannot be echoed.</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
-		<div class="tier push1" data-level="5" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/mechromancer-orderedchaos-11.png">
-				<div class="description"><h2>With Claws</h2>Melee Override Skill. While you have a stack of Anarchy, melee to digistruct claws and swipe twice at an enemy, dealing +0.6% melee damage per Anarchy stack and restoring health. The lower your health the more health you gain. This attack consumes an Anarchy stack.</div>
+		<div class="tier" data-level="1" data-invested="0" data-total="0">
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-spell-efficiency.svg">
+				<div class="description"><h2>Spell Efficiency</h2><span> The cost of creating new spell slots with sorcery points is reduced by <em data-base="1"></em>. Furthermore, whenever you convert spell slots to sorcery points, you gain <em data-base="1"></em> extra sorcery point for each spell slot converted.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-spell-critical.svg">
+				<div class="description"><h2>Spell Critical</h2><span> All of your damaging spells are now capable of critically hitting. Critically hitting with a spell generates <em data-base="2"></em> sorcery points.<span class="perLevel"> per level</span>.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-intensify-spell.svg">
+				<div class="description"><h2>Intensify Spell (Metamagic)</h2><span>You can cast a spell as if you were using a higher level spell slot. Costs a number of sorcery points equal to the higher level spell slot (e.g. intensifying a level 3 fireball to level 9 costs 9 sorcery points).</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
-		<div class="totalPoints">
-			<span class="totalPoints">0</span>
+		<div class="tier" data-level="2" data-invested="0" data-total="0">
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-widen-spell.svg">
+				<div class="description"><h2>Widen Spell (Metamagic)</h2><span>Costs <em data-base="3"></em> sorcery points. Any spell with an area of effect has its diameter/length increased by 50%.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-metamagic-master.svg">
+				<div class="description"><h2>Metamagic Master</h2><span>You can now apply two metamagic options to the same spell, unless otherwise noted.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-maximize-spell.svg">
+				<div class="description"><h2>Maximize Spell (Metamagic)</h2><span>Costs <em data-base="3"></em> sorcery points. Any rolled values for this spell are maximized (e.g. maximum damage, maximum healing, etc).</span></div>
+				<div class="points"></div>
+			</div>
 		</div>
-		<legend>Ordered Chaos</legend>
+		<div class="tier" data-level="3" data-invested="0" data-total="0">
+			<div class="skill push1" data-points="0" data-max="1"><img src="icons/dusk-twin-cosmic.svg">
+				<div class="description"><h2>Twin Cosmic</h2><span>As a bonus action costing <em data-base="2"></em> sorcery points <span class="perLevel"> per level</span>, you can create a shadowy clone of yourself made out of pure arcane energy. This clone has an action and a bonus action which it can use to cast any spell or cantrip you know on your turn, using up your spell slots and arcane points. Maintaining this clone costs  <em data-base="1"></em> sorcery point per round after the first. This clone moves alongside you, similar to the spell mirror image, lacks physicality, and cannot be destroyed.</span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="treelabel">
+			<div class="column3 totalPoints">
+				<span class="totalPoints">0</span>
+			</div>
+			<legend>Controller</legend>
+		</div>
+	</div>
+</div>
+
+<div class="treewrapper blue">
+	<div class="actionSkill"><img src="icons/quilak-scholar-passive.png" />
+		<div class="description"><h2>Scholar</h2>Passive Skill. The amount of damage you can mitigate with Glyph of Aegis increases by <em passive-mod="0" passive-base="1">0</em> per charged rune.</div>
+		<div class="passive points">0</div>
+	</div>
+	<div class="bglayer gray"></div>
+	<div class="bglayer color"></div>
+	<div class="tree" unselectable="on">
+		<div class="tier" data-level="0" data-invested="0" data-total="0">
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-adaptive-runes.svg">
+				<div class="description"><h2>Adaptive Runes</h2><span>Choose a damage type. You now have resistance to that damage type. Additionally, whenever you are targeted with this damage type, you charge one rune. You may only charge one rune per turn in this manner. You may change which damage type you resist during a short rest/long rest. </span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-reflective-runes.svg">
+				<div class="description"><h2>Reflective Runes</h2><span>Whenever a spell attack is directed at you, you have a 1 in 4 chance of reflecting it. If reflected, you may redirect it towards a target of your choice by making a spell attack roll.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-runic-storage.svg">
+				<div class="description"><h2>Runic Storage</h2><span>Once per day, you can store a spell inside your runes and activate it at any time as a reaction. You must expend a number of charged runes equal to the spell level you're holding. This spell storage dissipates after a long rest.</span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="1" data-invested="0" data-total="0">
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-runic-resonance.svg">
+				<div class="description"><h2>Runic Resonance</h2><span>Whenever you cast a spell, you gain a number of charged runes equal to the spell level you cast.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-quicksilver-runes.svg">
+				<div class="description"><h2>Quicksilver Runes</h2><span>By spending <em data-base="3"></em> charged runes as a reaction, you gain the Freedom of Movement buff until the end of your next turn.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-runic-critical.svg">
+				<div class="description"><h2>Runic Critical</h2><span>Increases your critical multiplier by <em data-base="1"></em>. Your critical strikes also charge a number of essence runes equal to your critical multiplier.</span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="2" data-invested="0" data-total="0">
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-runic-blade.svg">
+				<div class="description"><h2>Runic Blade</h2><span>As a bonus action, you can spend <em data-base="6"></em>charged runes to guarantee your next attack melee attack is a critical hit.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-spell-absorption.svg">
+				<div class="description"><h2>Spell Absorption</h2><span>By spending a number of charged runes equal to a spell that is targeting you, either directly or within its area of effect, you can attempt to counterspell it. If successful, the spell gets absorbed by your runes and can be later cast as if it were a known spell. You can only carry one absorbed spell at a time. This absorbed spell dissipates upon use or long rest.</span></div>
+				<div class="points"></div>
+			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-hardened-runes.svg">
+				<div class="description"><h2>Hardened Runes</h2><span> Your AC and saving throws increase by <em data-base="3"></em>.</span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="tier" data-level="3" data-invested="0" data-total="0">
+			<div class="skill push1" data-points="0" data-max="1"><img src="icons/dusk-arcane-avatar.svg">
+				<div class="description"><h2>Arcane Avatar</h2><span>You now have the benefits of the Arcane Exemplar Form passively. By spending <em data-base="6"></em> charged runes, you shift into an Arcane Avatar for 1 minute, gaining the following bonuses instead:
+				<ul>
+					<li>A flying speed of 60 feet</li> 
+					<li>+2 to attack and spell DC </li>
+					<li>Resistance to all damage </li> 
+					<li>A healing factor of 1d8 hp per round. </li>
+					<li>When you cast a spell of 1st level or higher, you regain hit points equal to twice the spell’s level.</li>
+				</ul>
+				You are no longer exhausted after using your Perfect Arcane Avatar and can act as soon as this form ends. Once you use this feature, you must finish a long rest before you can use it again. </span></div>
+				<div class="points"></div>
+			</div>
+		</div>
+		<div class="treelabel">
+			<div class="column3 totalPoints">
+				<span class="totalPoints">0</span>
+			</div>
+			<legend>Scholar</legend>
+		</div>
 	</div>
 </div>
 </div>
@@ -239,8 +286,16 @@
 <div class="summary">
 	<h2>List of Skills:</h2>
 	<div class="descriptionContainer"></div>
-	<div class="footer">Art &copy; 2012 <a href="https://www.gearboxsoftware.com/" target="_blank">Gearbox Studios</a>. <a href="https://www.google.com/webfonts" target="_blank">Fonts</a> by Google. Code hosted on Github. <a href="https://github.com/seigler/bl2skills.com">Source Code</a>.</div>
 </div>
 
 </body>
 </html>
+
+
+
+<!--
+find:
+^(.+) \t[0-9]+ \t([0-9]+) \t(.+)$
+replace:
+\t\t<div class="skill" data-points="0" data-max="\2"><img src="icons/class-tree-\i(0)">\n\t\t\t<div class="description"><h2>\1</h2>\3</div>\n\t\t\t<div class="points"></div>\n\t\t</div>
+-->
