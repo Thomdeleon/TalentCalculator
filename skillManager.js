@@ -194,7 +194,7 @@ function getHash() {
 }
 
 function changeBackground(backgroundIter) {
-	let numBackgrounds = 13;
+	let numBackgrounds = 14;
 	
 	let firstHalf = "background: #333 url('assets/background-";
 	let secondHalf = ".jpg') no-repeat fixed center center; background-size: cover;";
