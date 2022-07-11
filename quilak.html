@@ -13,26 +13,13 @@
 			let backgroundAnchor = document.getElementById("changeBackground");
 			let avatarAnchor = document.getElementById("changeAvatar");
 			let quilakPortrait = document.getElementById("quilakPortrait");
-			let crowleyPortrait = document.getElementById("crowleyPortrait");
-			let numBackgrounds = 12;
+			let crowleyPortrait = document.getElementById("crowleyPortrait");		
 			let numAvatars = 4;
-			
-			var backgroundIter = 2;
 			var avatarIter = 1;
+			var backgroundIter = 13;		//Starting background
 			
-			//TODO: Move to generic function
-			let changeBackground = function () {
-				let firstHalf = "background: #333 url('assets/background-";
-				let secondHalf = ".jpg') no-repeat fixed center center; background-size: cover;";
-				
-				if (backgroundIter > numBackgrounds) {
-					backgroundIter = 1;
-				}
-				
-				var bgImage = firstHalf + backgroundIter + secondHalf;
-				document.body.style = bgImage;
-				
-				backgroundIter++;
+			let background = function () {
+				backgroundIter = changeBackground(backgroundIter);
 				return false;
 			}; 
 			
@@ -59,10 +46,10 @@
 				return false;
 			};
 			
-			backgroundAnchor.onclick = changeBackground;
+			backgroundAnchor.onclick = background;
 			avatarAnchor.onclick = changeAvatar;
 			
-			changeBackground();
+			background();
 			changeAvatar();
 		}
 			

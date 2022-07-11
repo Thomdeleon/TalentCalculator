@@ -193,6 +193,24 @@ function getHash() {
 	return hash;
 }
 
+function changeBackground(backgroundIter) {
+	let numBackgrounds = 13;
+	
+	let firstHalf = "background: #333 url('assets/background-";
+	let secondHalf = ".jpg') no-repeat fixed center center; background-size: cover;";
+	
+	
+	if (backgroundIter > numBackgrounds) {
+		backgroundIter = 1;
+	}
+	
+	var bgImage = firstHalf + backgroundIter + secondHalf;
+	document.body.style = bgImage;
+	
+	backgroundIter++;
+	return backgroundIter;
+}
+
 $(document).ready(function () {
 	$('div.skill').mousedown(handleMousedown);
 	$('div.skill').mouseup(handleMouseup);
