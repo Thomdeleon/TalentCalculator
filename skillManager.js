@@ -108,6 +108,19 @@ function updateTree(treeHandle) {
 				var plus = ($(this).attr("data-base").substring(0,1) === "+" ? "+" : "");
 				$(this).html((sum > 0 ? plus : (sum == 0 ? "" : "-")) + sum);
 			});
+			//Begin scaling based on total points
+			$(this).find("span.totalPointsScaling").each(function(index) {
+				var base = parseFloat($(this).attr("totalPointsScaling-base"));
+				var mod = parseFloat($(this).attr("totalPointsScaling-mod"));
+				var step = parseFloat($(this).attr("totalPointsScaling-step"));
+				if (isNaN(mod)) mod = 0;
+				if (isNaN(step)) step = 1;
+				var sum = Math.ceil((Math.round((Math.max(totalPoints,1) * base + mod)*100)/100)/step);
+				var plus = ($(this).attr("totalPointsScaling-base").substring(0,1) === "+" ? "+" : "");
+				$(this).html((sum > 0 ? plus : (sum == 0 ? "" : "-")) + sum);
+			});
+			//End scaling based on total points
+			
 		});
 		$(this).attr("data-total", tierTotal);
 	});
