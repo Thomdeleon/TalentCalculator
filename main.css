@@ -262,7 +262,7 @@ legend,
 span.totalPoints {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 22pt;
+  font-size: 20pt;
   color: white;
   text-shadow: black 0 0 4px;
   position: absolute;
@@ -430,7 +430,7 @@ legend {
 }
 
 .purple legend {
-  color: #af00c2;
+  color: #a859ec;
 }
 
 .orange legend {
@@ -438,7 +438,7 @@ legend {
 }
 
 .teal legend {
-  color: #48ffff;
+  color: #37c3c3;
 }
 
 a.biglink {
