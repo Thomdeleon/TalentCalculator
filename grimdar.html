@@ -61,62 +61,64 @@
 	<h2>Grimdar Thundertoast</h2>
 	<h3>Level <span class="charLevel">5</span> Conjurer Wizard</h3>
 </div>
+
 <img id="grimdarPortrait" unselectable="on" class="portrait" src="assets/grimdarPortrait-1.png" style="left: 30%;margin-left: -35%;">
 
 <div class="treeCollection">
 <div class="treewrapper red">
 	<div class="actionSkill"><img src="icons/dusk-spell-combat-passive.png" />
-		<div class="description"><h2>Spell Combat</h2>Passive Skill. Your speed increases by <em passive-mod="0" passive-base="5">0</em> feet</div>
+		<div class="description"><h2>Telemancy</h2>Passive Skill. Increases the number of spells you can prepare by <em passive-mod="0" passive-base="1">0</em>. These spells must come from the conjuration tree. Also increases the range of your teleportation spells by <em passive-mod="0" passive-base="5">0</em> feet.</div>
 		<div class="passive points">0</div>
 	</div>
 	<div class="bglayer gray"></div>
 	<div class="bglayer color"></div>
 	<div class="tree">
 		<div class="tier" data-level="0" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-whirlwind-strike.svg">
-				<div class="description"><h2>Whirlwind Strike</h2><span>As an action, you can perform your attack action against all targets within 5 feet.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-hostile-teleporter.svg">
+				<div class="description"><h2>Hostile Teleporter</h2><span>Any teleportation spell which can be used on a willing creature can now also be used on a hostile creature too. The target must roll a wisdom save against your spell DC in order to avoid being teleported.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="3"><img src="icons/dusk-arcane-arts.svg">
-				<div class="description"><h2>Arcane Arts</h2><span>You know <em data-mod="1" data-base="2"></em> maneuvers from the Battle Master Fighter archetype. You use d<em data-mod="6" data-base="2"></em>s for these maneuvers and each maneuver costs <em data-mod="5" data-base="-1"></em> sorcery points to use.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-object-teleportation.svg">
+				<div class="description"><h2>Object Teleportation (Cantrip)</h2><span>As an action, you can teleport any object you are touching weighing less than <span class="tpScaling" tpScaling-mod="50" tpScaling-base="10">0</span> lbs up to 60 feet in any direction, so long as it is in line of sight and on solid ground. If this object is being held, the creature can make a wisdom saving throw to resist this effect.
+				</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-total-focus.svg">
-				<div class="description"><h2>Total Focus</h2><span>Once per short rest, you can choose to succeed on a concentration check that you would have failed.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-traveller.svg">
+				<div class="description"><h2>Traveller</h2><span>Your Far Step spell no longer requires concentration and now requires a movement action instead of a bonus action to use.</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="1" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-quick-cantrip.svg">
-				<div class="description"><h2>Quick Cantrip</h2><span>You can use quicken metamagic on any cantrip without using sorcery points.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-transporter.svg">
+				<div class="description"><h2>Transporter</h2><span>You may bring along one willing creature whenever you cast a teleportation spell with a target of self. You must be touching the willing creature when casting the spell.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-spell-weaving.svg">
-				<div class="description"><h2>Spell Weaving</h2><span>Performing a melee attack grants advantage on your next non-melee spell attack until the end of your next turn. Performing a non-melee spell attack grants advantage on your next melee attack until the end of your next turn.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-redirect.svg">
+				<div class="description"><h2>Redirect</h2><span><span class="tpScaling" tpScaling-base="1">0</span> times per day as a reaction, you can redirect an incoming ranged attack/ranged spell attack. Roll an opposed spell attack with a bonus equal to <span class="tpScaling" tpScaling-base="1" tpScaling-step="2">0</span>. If your roll beats the incoming attack roll, you are able to create a pair of portals that redirects the attack to whichever target you designate, using the attack roll you just rolled. </span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-improved-spellstrike.svg">
-				<div class="description"><h2>Improved Spellstrike</h2><span>Whenever you would make a melee attack against a single target, you may instead choose to cast a melee cantrip instead.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-trickster.svg">
+				<div class="description"><h2>Trickster</h2><span>You now have two bonus actions per turn and may cast multiple non-cantrip conjuration spells per turn. </span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="2" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-extra-attack.svg">
-				<div class="description"><h2>Extra attack</h2><span>You can now attack two times per attack action. This does not stack with other sources of extra attack (such as from multiclassing).</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-scatterbrain.svg">
+				<div class="description"><h2>Scatterbrain</h2><span>You can now cast the scatter spell without using any spell slots <span class="tpScaling" tpScaling-base="1">0</span> times per day. The number of creatures you can affect with a single scatter spell increases to <span class="tpScaling" tpScaling-base="1" tpScaling-mod="5">0</span>.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-spell-combo.svg">
-				<div class="description"><h2>Spell Combo</h2><span>Whenever you perform four attack actions consecutively without repeating any attack in this sequence, you can cast a spell as a free action (e.g. whirlwind strike => quickened booming blade => attack of opportunity => attack action => free action spell).</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-telefrag.svg">
+				<div class="description"><h2>Telefrag</h2><span>You can now use teleportation spells to teleport creatures and objects into each other (if targeting multiple creatures, each one must fail their wisdom saving throw). This deals xd10 + <span class="tpScaling" tpScaling-base="1">0</span>x damage, where x is the spell level of the teleport cast (minimum 1). If used to teleport an explosive object into a target, the explosive deals critical damage and the target is unable to perform a dexterity saving throw to reduce or evade the damage of the explosive. Both targets end up next to each other after the spell ends, as if they were affected by a Teleport mishap. </span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-spellburst.svg">
-				<div class="description"><h2>Spellburst</h2><span>When using the Spellsword ability, you can choose to end the spell you are concentrating on to deal maximum damage with that attack.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-master-conjurer.svg">
+				<div class="description"><h2>Master Conjurer</h2><span><span class="tpScaling" tpScaling-base="1">0</span> times per day, you can designate the next conjuration spell 4th level or lower to be cast as if using a 9th level spell slot.</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="3" data-invested="0" data-total="0">
-			<div class="skill push1" data-points="0" data-max="1"><img src="icons/dusk-omnislash.svg">
-				<div class="description"><h2>Omnislash</h2><span>As an attack action, you can now hit multiple enemies with a single strike. Draw a line up to your movement, passing through each of your intended targets. You can perform a single melee attack against every enemy you pass through, provoking no attacks of opportunity while you pass through them.</span></div>
+			<div class="skill push1" data-points="0" data-max="1"><img src="icons/grimdar-send-to-the-sky.svg">
+				<div class="description"><h2>Send to the Sky</h2><span>All of your conjuration spells which require the affected target(s) or portals to be placed on solid ground (such as Scatter, Arcane Portal, or Summon Elemental) no longer have this requirement, allowing you to teleport them anywhere within range. Your portal spells (i.e. Arcane Portal and Gate) can now be placed with any orientation.</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
@@ -124,64 +126,64 @@
 			<div class="totalPoints">
 				<span class="totalPoints">0</span>
 			</div>
-			<legend>Spell Combat</legend>
+			<legend>Telemancy</legend>
 		</div>
 	</div>
 </div>
 
 <div class="treewrapper purple">
 	<div class="actionSkill"><img src="icons/dusk-sorcery-passive.png" />
-		<div class="description"><h2>Sorcery</h2>Passive Skill. You are granted a total of <em passive-mod="0" passive-base="1">0</em> metamagic options OR sorcery points, your choice each level.</div>
+		<div class="description"><h2>Chronomancy</h2>Passive Skill. You can manipulate time around a creature. After a creature makes an attack roll, an ability check, or a saving throw, you can force them to reroll. The target must use the second roll. You can use this ability <em passive-mod="0" passive-base="1">0</em> times per day</div>
 		<div class="passive points">0</div>
 	</div>
 	<div class="bglayer gray"></div>
 	<div class="bglayer color"></div>
 	<div class="tree">
 		<div class="tier" data-level="0" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="3"><img src="icons/dusk-broad-learning.svg">
-				<div class="description"><h2>Arcane Studies</h2><span>You can choose a spell from the wizard class' spell list <em data-mod="3" data-base="2"></em>th level and under and add it to your list of known spells.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-time-thief.svg">
+				<div class="description"><h2>Time Thief</h2><span>While Slow is active on a target, you gain the effects of Haste. When Slow is active on multiple targets, you can buff an equivalent number of allies with the effects of Haste. </span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-abundant-casting.svg">
-				<div class="description"><h2>Abundant Casting</h2><span>You can now use flexible casting to create any number of spell slots or sorcery points instead of just one as a bonus action. You can also now create 6th level spell slots by spending <em data-base="11"></em> sorcery points.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-stasis.svg">
+				<div class="description"><h2>Stasis</h2><span><span class="tpScaling" tpScaling-base="1" tpScaling-mod="3" tpScaling-stepFloor="2">0</span> times per day as an action, you can magically force a creature you can see within 60 feet of you to make a Constitution saving throw against your spell save DC. On a failed save the creature is incapacitated and has a speed of 0 until the end of your next turn or until the creature takes any damage. </span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-echo-spell.svg">
-				<div class="description"><h2>Echo Spell (Metamagic)</h2><span> Costs <em data-base="3"></em> sorcery points. An echo spell is cast again in the same spot one round later at the start of your next turn. Only instantaneous spells with an area of effect can be echoed. Targeted spells, spells with a duration, and spells requiring concentration cannot be echoed.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-convergent-futures.svg">
+				<div class="description"><h2>Convergent Futures</h2><span> You can peer through possible futures and magically pull one of them into events around you, ensuring a particular outcome. When you or a creature you can see within 60 feet of you makes an attack roll, an ability check, or a saving throw, you can use your reaction to ignore the die roll and decide whether the number rolled is the minimum needed to succeed or one less than that number (your choice). When you use this feature, you gain one level of exhaustion.</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="1" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-spell-efficiency.svg">
-				<div class="description"><h2>Spell Efficiency</h2><span> The cost of creating new spell slots with sorcery points is reduced by <em data-base="1"></em>. Furthermore, whenever you convert spell slots to sorcery points, you gain <em data-base="1"></em> extra sorcery point for each spell slot converted.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-time-dilation.svg">
+				<div class="description"><h2>Time Dilation</h2><span> (7th level Transmutation) Range 120 feet. Lasts for 1 minute. Requires concentration. You create a bubble of slowed time with a radius of 20 feet. Anything within that bubble is slowed with no save. Projectiles and spell attacks passing through this bubble to attack something on the other side have disadvantage.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-spell-critical.svg">
-				<div class="description"><h2>Spell Critical</h2><span> All of your damaging spells are now capable of critically hitting. Critically hitting with a spell generates <em data-base="2"></em> sorcery points.<span class="perLevel"> per level</span>.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-chronobreak.svg">
+				<div class="description"><h2>Chronobreak</h2><span> All spells that take 1-10 minutes to cast have their casting time reduced to 1 action.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-intensify-spell.svg">
-				<div class="description"><h2>Intensify Spell (Metamagic)</h2><span>You can cast a spell as if you were using a higher level spell slot. Costs a number of sorcery points equal to the higher level spell slot (e.g. intensifying a level 3 fireball to level 9 costs 9 sorcery points).</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-parallel-casting.svg">
+				<div class="description"><h2>Parallel Casting</h2><span> You can focus on two concentration spells at the same time with no penalty. If the spell requires a bonus action to use it on subsequent turns, you may use both concentration spells as a single bonus action. If you have the feat dual-focused, you can concentrate on a third spell, incurring the same penalities on the third spell as the feat specifies. </span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="2" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-widen-spell.svg">
-				<div class="description"><h2>Widen Spell (Metamagic)</h2><span>Costs <em data-base="3"></em> sorcery points. Any spell with an area of effect has its diameter/length increased by 50%.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-quicken.svg">
+				<div class="description"><h2>Quicken</h2><span>While under the effects of Haste, you can cast a second spell in lieu of making an additional attack. You are able to cast two non-cantrip spells in this manner.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-metamagic-master.svg">
-				<div class="description"><h2>Metamagic Master</h2><span>You can now apply two metamagic options to the same spell, unless otherwise noted.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-look-at-the-time.svg">
+				<div class="description"><h2>Look at the Time</h2><span> You take two turns on the first turn of combat and every three turns afterwards (1, 4, 7, etc). </span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-maximize-spell.svg">
-				<div class="description"><h2>Maximize Spell (Metamagic)</h2><span>Costs <em data-base="3"></em> sorcery points. Any rolled values for this spell are maximized (e.g. maximum damage, maximum healing, etc).</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-time-lord.svg">
+				<div class="description"><h2>Time Lord</h2><span> Your Time Stop now lasts a minimum of 3 rounds. Secondly, when casting Time Stop, you may selectively designate which creatures and which areas are affected by Time Stop. Any spells or attacks cast into the time stopped areas hang frozen in time until the Time Stop ends, at which point they resume their normal trajectory. Lastly, you may choose to extend the duration of Time Stop by using your concentration and spending your action, movement action, and bonus action each turn. If you are moved out of range of Time Stop or if you lose concentration, Time Stop ends. The difficulty of maintaining concentration on this spell increases by 1 per turn you spend this way.</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="3" data-invested="0" data-total="0">
-			<div class="skill push1" data-points="0" data-max="1"><img src="icons/dusk-twin-cosmic.svg">
-				<div class="description"><h2>Twin Cosmic</h2><span>As a bonus action costing <em data-base="2"></em> sorcery points <span class="perLevel"> per level</span>, you can create a shadowy clone of yourself made out of pure arcane energy. This clone has an action and a bonus action which it can use to cast any spell or cantrip you know on your turn, using up your spell slots and arcane points. Maintaining this clone costs  <em data-base="1"></em> sorcery point per round after the first. This clone moves alongside you, similar to the spell mirror image, lacks physicality, and cannot be destroyed.</span></div>
+			<div class="skill push1" data-points="0" data-max="1"><img src="icons/grimdar-rewind-time.svg">
+				<div class="description"><h2>Rewind Time</h2><span>Once per day, as an immediate action, you may rewind yourself 3 turns back. You regain any lost health, spell slots, abilities, item charges, expended items on your person, and any conditions you have incurred in the past 3 turns are undone. You and all items you are carrying (but not creatures) are returned to a state they were in 3 turns prior. </span></div>
 				<div class="points"></div>
 			</div>
 		</div>
@@ -189,72 +191,74 @@
 			<div class="column3 totalPoints">
 				<span class="totalPoints">0</span>
 			</div>
-			<legend>Sorcery</legend>
+			<legend>Chronomancy</legend>
 		</div>
 	</div>
 </div>
 
 <div class="treewrapper blue">
 	<div class="actionSkill"><img src="icons/dusk-runechild-passive.png" />
-		<div class="description"><h2>Runechild</h2>Passive Skill. The amount of damage you can mitigate with Glyph of Aegis increases by <em passive-mod="0" passive-base="1">0</em> per charged rune.</div>
+		<div class="description"><h2>Technomancy</h2>Passive Skill. You know <em passive-mod="0" passive-base="1">0</em>. Your Artificer level is considered <em passive-mod="0" passive-base="2">0</em> for the purpose of meeting prerequisites.</div>
 		<div class="passive points">0</div>
 	</div>
 	<div class="bglayer gray"></div>
 	<div class="bglayer color"></div>
 	<div class="tree" unselectable="on">
 		<div class="tier" data-level="0" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-adaptive-runes.svg">
-				<div class="description"><h2>Adaptive Runes</h2><span>Choose a damage type. You now have resistance to that damage type. Additionally, whenever you are targeted with this damage type, you charge one rune. You may only charge one rune per turn in this manner. You may change which damage type you resist during a short rest/long rest. </span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-smart-gun.svg">
+				<div class="description"><h2>Smart Gun</h2><span> You gain proficiency in firearms. Furthermore, any firearm you are attuned to is now considered a smart gun, allowing you to use your intelligence in place of your dexterity for attack and damage rolls. You can attune to any firearm, even if such a firearm would normally not allow for attunement.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-reflective-runes.svg">
-				<div class="description"><h2>Reflective Runes</h2><span>Whenever a spell attack is directed at you, you have a 1 in 4 chance of reflecting it. If reflected, you may redirect it towards a target of your choice by making a spell attack roll.</span></div>
+			<div class="skill" data-points="0" data-max="3"><img src="icons/grimdar-self-study.svg">
+				<div class="description"><h2>Self-Study</h2><span> Learn any two infusions that you qualify for.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-runic-storage.svg">
-				<div class="description"><h2>Runic Storage</h2><span>Once per day, you can store a spell inside your runes and activate it at any time as a reaction. You must expend a number of charged runes equal to the spell level you're holding. This spell storage dissipates after a long rest.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-magical-efficiency.svg">
+				<div class="description"><h2>Magical Efficiency</h2><span> The number of uses for all items with charges that are attuned to you increases by 1.</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="1" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-runic-resonance.svg">
-				<div class="description"><h2>Runic Resonance</h2><span>Whenever you cast a spell, you gain a number of charged runes equal to the spell level you cast.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-magical-strike.svg">
+				<div class="description"><h2>Magical Strike</h2><span> Whenever you cast a spell or cantrip, you may shoot a firearm as a bonus action.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-quicksilver-runes.svg">
-				<div class="description"><h2>Quicksilver Runes</h2><span>By spending <em data-base="3"></em> charged runes as a reaction, you gain the Freedom of Movement buff until the end of your next turn.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-sphere-of-annihilation.svg">
+				<div class="description"><h2>Sphere of Annihilation (Cantrip)</h2><span> Requires concentration. You have a Sphere of Anniliation under your control that you can summon as an action. While concentrating on it, you can move this sphere up to 30 feet as a bonus action. Any creature within the path of this sphere must make a dexterity saving throw against your spell save DC or take 4d10 force damage (scale with cantrip). Any non-artifact object is obliterated by this sphere and a creature who dies to this is wholly absorbed by it, as the spell disintegrate.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-runic-critical.svg">
-				<div class="description"><h2>Runic Critical</h2><span>Increases your critical multiplier by <em data-base="1"></em>. Your critical strikes also charge a number of essence runes equal to your critical multiplier.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-extra-attunement.svg">
+				<div class="description"><h2>Extra Attunement</h2><span> Your maximum attunement slots increases by 2</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="2" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-runic-blade.svg">
-				<div class="description"><h2>Runic Blade</h2><span>As a bonus action, you can spend <em data-base="6"></em>charged runes to guarantee your next attack melee attack is a critical hit.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-railgun.svg">
+				<div class="description"><h2>Railgun (Firearm)</h2><span>Magical firearm. Requires attunement. Range 200/600. This magical firearm is powered by the ambient energy of your magical spells. The railgun has 10 power levels. Starting at 0, every spell you cast charges the power level of your railgun by an amount equal to the level of the spell you cast. Spells cast using Signature Spell count as 1 for the purpose of charging the Railgun. Whenever you fire a shot or whenver 1 minute elapses since you fired your last shot, the charge level resets to 0. The Railgun is a +3 ranged piercing weapon that deals xd12+x+dexterity+3 damage, where x is the charge level. The railgun is so complex, it is only usable by those with the talent to utilize it.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-spell-absorption.svg">
-				<div class="description"><h2>Spell Absorption</h2><span>By spending a number of charged runes equal to a spell that is targeting you, either directly or within its area of effect, you can attempt to counterspell it. If successful, the spell gets absorbed by your runes and can be later cast as if it were a known spell. You can only carry one absorbed spell at a time. This absorbed spell dissipates upon use or long rest.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-replicator.svg">
+				<div class="description"><h2>Replicator</h2><span> You learn 8 new infusions drawn from the Replicate Magic Item list. Choose 2 items from the 2nd level, 6th level, 10th level, and 14th level Replicable Items lists. You may change which 8 Magic Items you know how to replicate on a long rest. Upon doing so, any existing replicated magical items lose their infusions, returning to mundane items. </span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-hardened-runes.svg">
-				<div class="description"><h2>Hardened Runes</h2><span> Your AC and saving throws increase by <em data-base="3"></em>.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-antimagic-hardening.svg">
+				<div class="description"><h2>Antimagic Hardening</h2><span>All magical items you wield are immune to the effects of antimagic field.</div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="3" data-invested="0" data-total="0">
-			<div class="skill push1" data-points="0" data-max="1"><img src="icons/dusk-arcane-avatar.svg">
-				<div class="description"><h2>Arcane Avatar</h2><span>You now have the benefits of the Arcane Exemplar Form passively. By spending <em data-base="6"></em> charged runes, you shift into an Arcane Avatar for 1 minute, gaining the following bonuses instead:
+			<div class="skill push1" data-points="0" data-max="1"><img src="icons/grimdar-savant.svg">
+				<div class="description"><h2>Savant</h2><span>You gain the following traits:
 				<ul>
-					<li>A flying speed of 60 feet</li> 
-					<li>+2 to attack and spell DC </li>
-					<li>Resistance to all damage </li> 
-					<li>A healing factor of 1d8 hp per round. </li>
-					<li>When you cast a spell of 1st level or higher, you regain hit points equal to twice the spell’s level.</li>
+					<li>Your maximum number of attunement slots increases by 3.</li> 
+					<li>You may change which infusions you know on a long rest. Upon doing so, any items with existing infusion return to their original mundane state. </li>
+					<li>You gain a +1 bonus to all saving throws for each magic item you are attuned to.</li> 
+					<li>You ignore all class, race, spell, and level requirements when attuning to a magic item. </li>
+					<li>You can attune/deattune to any number of magic items while taking a short or long rest.</li>
+					<li>You gain the "Magical Tinkering" and the "Right Tool for the Job" traits of the Artificer class. </li>
+					<li>You gain proficiency in Tinker Tools, allowing you to tinker with/repair/hack magitech. This skill uses intelligence.</li>
 				</ul>
-				You are no longer exhausted after using your Perfect Arcane Avatar and can act as soon as this form ends. Once you use this feature, you must finish a long rest before you can use it again. </span></div>
+				</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
