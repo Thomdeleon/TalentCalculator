@@ -65,57 +65,128 @@
 <div class="treeCollection">
 <div class="treewrapper red">
 	<div class="actionSkill"><img src="icons/dusk-spell-combat-passive.png" />
-		<div class="description"><h2>Spell Combat</h2>Passive Skill. Your speed increases by <em passive-mod="0" passive-base="5">0</em> feet</div>
+		<div class="description"><h2>Root and Flower</h2>Passive Skill. Every time you roll a 1 on a heal, you gain a <span class="bold-green">Seed of Life</span>, representing untapped potential. <span class="bold-green">The maximum number of Seeds of Life you can carry is equal to <em passive-mod="0" passive-base="1">0</em></span>. These seeds do not expire and last until used.</div>
 		<div class="passive points">0</div>
 	</div>
 	<div class="bglayer gray"></div>
 	<div class="bglayer color"></div>
 	<div class="tree">
 		<div class="tier" data-level="0" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-whirlwind-strike.svg">
-				<div class="description"><h2>Whirlwind Strike</h2><span>As an action, you can perform your attack action against all targets within 5 feet.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-thornmail.svg">
+				<div class="description"><h2>Thornmail (2nd Level Transmutation)</h2><span>2nd Level Transmutation spell. Requires Concentration. As an action, you can grant an ally within 30 feet the thornmail property for 1 minute. Thornmail armor reflects 50% of any melee attack damage, or 25% of any ranged attack damage, back as piercing damage. 
+				<ul>
+	<li><span class="bold-orange">Armory of Thorns:</span> <span class="bold-green">Costs 1 seed of life.</span> Target an additional ally with this spell</li>
+	<li><span class="bold-orange">Self-Sustaining:</span> <span class="bold-green">Costs 3 seeds of life.</span> Removes Concentration from the spell.</li>
+	<li><span class="bold-orange">Circle of Life:</span> <span class="bold-green">Costs 1 seed of life.</span> Regain the spell slot used to cast this spell.</li>
+				</ul>
+	</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="3"><img src="icons/dusk-arcane-arts.svg">
-				<div class="description"><h2>Arcane Arts</h2><span>You know <em data-mod="1" data-base="2"></em> maneuvers from the Battle Master Fighter archetype. You use d<em data-mod="6" data-base="2"></em>s for these maneuvers and each maneuver costs <em data-mod="5" data-base="-1"></em> sorcery points to use.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-touching-grass.svg">
+				<div class="description"><h2>Touching Grass</h2><span>You gain the following benefits while standing on natural ground or while under open sky:
+				<ul>
+	<li><span class="bold-orange">Perspective:</span> As an action, you can end one ongoing charmed, frightened, or other mind-altering effect on yourself.</li>
+	<li><span class="bold-orange">Focus:</span> You have advantage on all concentration checks, as well as on any intelligence, wisdom, or charisma saving throw.</li>
+	<li><span class="bold-orange">Meditation:</span> <span class="bold-green">Costs 1 Seed of Life.</span> Requires concentration. As a bonus action, you may start meditating, gaining 1d8+wisdom modifier hp each round for up to 1 minute. </li>
+	<li><span class="bold-orange">Tranquility:</span> <span class="bold-green">Costs 4 Seeds of Life.</span> Requires concentration. As a bonus action, you grant Perspective, Focus, and Meditation to all allies within 60 feet for 1 minute.  </li>
+				</ul>
+				</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-total-focus.svg">
-				<div class="description"><h2>Total Focus</h2><span>Once per short rest, you can choose to succeed on a concentration check that you would have failed.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-wonderberry-bush.svg">
+				<div class="description"><h2>Wonderberry Bush (4th Level Transmutation)</h2><span>4th level Transmutation Spell. Casting time 1 minute. Requires ground that can support plant life. You magically grow a Wonderberry Bush full of 4d12+12 berries. For each 1d12+3 berries, you may choose one of the four following berry types. Up to 12 berries can be consumed at one time in the same way one would drink a potion. Harvested berries expire after 24 hours. Harvesting a full bush requires a minute of work. Unharvested berries expire after 3 days. Wonderberry Bushes regrow their berries after 1 year. All of the listed berries heal for 1d4+Math.floor(x/2), in addition to their listed affects.
+				<ul>
+	<li><span class="bold-orange">Butterberry:</span> Tastes incredible. Improves the quality of any dishes made with it.</li>
+	<li><span class="bold-orange">Miracle Berry:</span> Cures the poisoned, blinded, or deafened condition. Makes sour things taste sweet.</li>
+	<li><span class="bold-orange">Cloudberry:</span> Makes you feel light as a cloud. Grants Gaseous Form for 1 minute.</li>
+	<li><span class="bold-orange">Meadberry:</span> You have advantage on all concentration checks, as well as on any intelligence, wisdom, or charisma saving throw.</li>
+	<li><span class="bold-orange">Accelerated Growth:</span> <span class="bold-green">Costs 1 Seed of Life.</span> Casting time of Wonderberry Bush is reduced to 1 action.  </li>
+	<li><span class="bold-orange">Luscious Berries:</span> <span class="bold-green">Costs 2 Seeds of Life.</span> All berries heal for 1d6+Math.floor(x) instead.</li>
+	<li><span class="bold-orange">Circle of Life:</span> <span class="bold-green">Costs 3 Seeds of Life.</span> Regain your 4th level spell slot after casting Wonderberry Bush. </li>
+				</ul>
+				</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="1" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-quick-cantrip.svg">
-				<div class="description"><h2>Quick Cantrip</h2><span>You can use quicken metamagic on any cantrip without using sorcery points.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-arm-of-thresh.svg">
+				<div class="description"><h2>Arm of Thresh</h2><span> You may turn your arm into a series of twisting, living roots with a 30 foot range. You gain the following:
+				<ul>
+	<li><span class="bold-orange">Improved Shillelagh:</span> Your arm is treated as a Shillelagh with a 30 foot range. As an action, you may make a 30 foot ranged attack, dealing damage equal to 5d8 + wisdom at level 21. This increases by 1d8 at level 29 to a maximum of 6d8 + wisdom.</li>
+	<li><span class="bold-orange">Root Bind:</span> As a action, you may attempt to restrain a target. Use your wisdom score in place of strength for this check.</li>
+	<li><span class="bold-orange">Lifegrip:</span> <span class="bold-green">Costs 1 Seed of Life.</span> As an action, you may pull any ally your size or less within 30 feet towards you. You may also pull yourself to a fixed object with this ability. This movement does not provoke attacks of opportunity.</li>
+	<li><span class="bold-orange">Anchoring Root:</span> <span class="bold-green">Costs 2 Seeds of Life.</span> Doubles the range of your Arm of Thresh to 60 feet and grants advantage on Root Bind and Improved Shillelagh for 1 minute.</li>
+				</ul>
+				</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-spell-weaving.svg">
-				<div class="description"><h2>Spell Weaving</h2><span>Performing a melee attack grants advantage on your next non-melee spell attack until the end of your next turn. Performing a non-melee spell attack grants advantage on your next melee attack until the end of your next turn.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-regrowth.svg">
+				<div class="description"><h2>Regrowth</h2><span> Your next healing spell also heals over time, restoring an amount equal to the minimum dice roll at the start of every turn for x turns. If the healing is a fixed amount (such as with the spell Heal), it heals 1/5th of its normal amount every turn. You may apply regrowth to any healing spell once per short rest. The Regrowth effect ends when the target drops to zero hit points or whenever the duration ends.
+				<ul>
+	<li><span class="bold-orange">Lifebloom:</span> <span class="bold-green">Costs 1 Seed of Life.</span> As a bonus action, the target gains all of its remaining healing over time instantly.</li>
+	<li><span class="bold-orange">Regenerate:</span> <span class="bold-green">Costs 5 Seeds of Life.</span> Your regrowth ability now no longer ends when the target drops to 0 hp. Upon dropping to 0 health, a target with regrowth must still make a death save, but is instantly brought back above 0 hp thereafter.</li>
+	<li><span class="bold-orange">Circle of Life:</span> <span class="bold-green">Costs 2 Seeds of Life.</span> You may cast regrowth again. The regrowth effect does not stack. The one with the highest healing or longest duration takes precedence.</li>
+				</ul>
+				</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-improved-spellstrike.svg">
-				<div class="description"><h2>Improved Spellstrike</h2><span>Whenever you would make a melee attack against a single target, you may instead choose to cast a melee cantrip instead.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-tree-of-shelter.svg">
+				<div class="description"><h2>Tree of Shelter (5th level Transmutation)</h2><span> As an action, you can magically grow a Tree of Shelter with a 25 foot radius for 1 minute. It has the following traits:
+				<ul>
+	<li><span class="bold-orange">Shelter:</span> Creatures under the Tree of Shelter have advantage on dexterity saving throws and have the benefits of Evasion while under its branches.</li>
+	<li><span class="bold-orange">Lashing:</span> Any hostile creature you designate that steps within 5 feet of the tree gets attacked for 4d6 bludgeoning damage and must roll a dexterity saving throw against your spell DC to avoid becoming restrained on hit. A creature that starts its turn in the area and is already restrained by the branches takes 4d6 bludgeoning damage. A creature restrained by the branches can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself.</li>
+	<li><span class="bold-orange">Awaken:</span> <span class="bold-green"> Costs 3 Seeds of Life.</span> Removes concentration from Tree of Shelter.</li>
+	<li><span class="bold-orange">Circle of Life:</span> <span class="bold-green"> Costs 3 Seeds of Life.</span> Regain the spell slot used to summon the Tree of Shelter.</li>
+				</ul>
+				</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="2" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-extra-attack.svg">
-				<div class="description"><h2>Extra attack</h2><span>You can now attack two times per attack action. This does not stack with other sources of extra attack (such as from multiclassing).</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-swiftmending.svg">
+				<div class="description"><h2>Swiftmending</h2><span>You can cast any healing or restoration spell that takes one action or bonus action to cast as a reaction. You can perform swiftmending once per day.  
+				<ul>
+	<li><span class="bold-orange">Nature's Swiftness:</span> <span class="bold-green">Costs 1 Seed of Life.</span> You can cast any spell that takes one action or bonus action as a reaction, not just a healing or restoration spell.</li>
+	<li><span class="bold-orange">Regenerate:</span> <span class="bold-green">Costs 2 Seeds of Life.</span> You may cast any healing or restoration spell that takes 1 action as a bonus action.</li>
+	<li><span class="bold-orange">Circle of Life:</span> <span class="bold-green">Costs 2 Seeds of Life.</span> You may use swiftmending again.</li>
+				</ul>
+				</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-spell-combo.svg">
-				<div class="description"><h2>Spell Combo</h2><span>Whenever you perform four attack actions consecutively without repeating any attack in this sequence, you can cast a spell as a free action (e.g. whirlwind strike => quickened booming blade => attack of opportunity => attack action => free action spell).</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-tree-of-life.svg">
+				<div class="description"><h2>Tree of Life</h2><span>You can use your Wild Shape ability to change into a medium-sized treant. You gain the following traits while in Tree of Life form:
+				<ul>
+	<li><span class="bold-orange">Tree of Life:</span> The potency of your healing spells increases by 50% while in this form.</li>
+	<li><span class="bold-orange">Natural Healer:</span> You may cast multiple healing or restoration spells per turn while in this form.</li>
+	<li><span class="bold-orange">Ponderous:</span> Your movement speed is reduced by 10 feet.</li>
+	<li><span class="bold-orange">Nature's Reach:</span> The range of your spells is doubled. If the range is touch, the range increases to 30 feet.</li>
+	<li><span class="bold-orange">Barkskin:</span> You are under the effects of barkskin without the need for concentration.</li>
+	<li><span class="bold-orange">Ironwood:</span> <span class="bold-green">Costs 2 Seeds of Life.</span> As a bonus action, you may gain +2 AC for 1 minute. You can decide to cast Ironwood as part of your Wild Shape action to turn into a Tree of Life.</li>
+				</ul>
+				</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-spellburst.svg">
-				<div class="description"><h2>Spellburst</h2><span>When using the Spellsword ability, you can choose to end the spell you are concentrating on to deal maximum damage with that attack.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-black-lotus.svg">
+				<div class="description"><h2>Black Lotus (9th level Conjuration)</h2><span>9th Level Conjuration Spell. You summon the black lotus as a bonus action, lasting for 1 minute. While holding the black lotus, you may use each of its three effects. Using an effect removes that portion of the black lotus until nothing remains.
+				<ul>
+	<li><span class="bold-orange">Detachment (Stem):</span> As an action, you remove all negative and positive conditions from a target creature within 60 feet.</li>
+	<li><span class="bold-orange">Rebirth (Pistil):</span> As an action, restore a creature within touch range to full health or restore a creature who has died in the past day back to life with 1/2 health. If the one who summons the black lotus dies, they are automatically resurrected with half health on their next turn by this effect instead.</li>
+	<li><span class="bold-orange">Enlightenment (Petals):</span> Your next single target healing or restoration spell affects x creatures you designate within a 60 foot range.</li>
+	<li><span class="bold-orange">Circle of Life:</span> <span class="bold-green">Costs 7 Seeds of Life.</span> You regain the spell slot used to summon the Black Lotus.</li>
+				</ul>
+				</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="3" data-invested="0" data-total="0">
-			<div class="skill push1" data-points="0" data-max="1"><img src="icons/dusk-omnislash.svg">
-				<div class="description"><h2>Omnislash</h2><span>As an attack action, you can now hit multiple enemies with a single strike. Draw a line up to your movement, passing through each of your intended targets. You can perform a single melee attack against every enemy you pass through, provoking no attacks of opportunity while you pass through them.</span></div>
+			<div class="skill push1" data-points="0" data-max="1"><img src="icons/luven-wild-growth.svg">
+				<div class="description"><h2>Wild Growth</h2><span>You gain the following benefits:
+	<li><span class="bold-orange">Spontaneous Growth:</span> Whenever you roll for initiative, roll a d4. You gain that many Seeds of Life.</li>
+	<li><span class="bold-orange">Overgrowth:</span> You gain 1 Seed of Life every time you roll maximum on a healing die roll, not just minimum.</li>
+	<li><span class="bold-orange">Life Finds a Way:</span> <span class="bold-green">Costs 1 Seed of Life.</span> You can reroll the result of any healing roll. You do not gain seeds for the results of any previous roll, only for the final result.</li>
+	<li><span class="bold-orange">Miracle Growth:</span> <span class="bold-green">Costs up to 5 Seeds of Life.</span> You may cast your next healing spell as if you were using a higher level spell slot, to a maximum of 9th level, without expending a higher level spell slot. Increase the level of your spell cast by 1 for every Seed of Life you spend in this manner, up to a maximum of 5.</li>
+				</ul>
+				</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
@@ -123,64 +194,84 @@
 			<div class="totalPoints">
 				<span class="totalPoints">0</span>
 			</div>
-			<legend>Spell Combat</legend>
+			<legend>Root and Flower</legend>
 		</div>
 	</div>
 </div>
 
 <div class="treewrapper purple">
 	<div class="actionSkill"><img src="icons/dusk-sorcery-passive.png" />
-		<div class="description"><h2>Sorcery</h2>Passive Skill. You are granted a total of <em passive-mod="0" passive-base="1">0</em> metamagic options OR sorcery points, your choice each level.</div>
+		<div class="description"><h2>Tooth and Claw</h2>Passive Skill. The CR of beasts you can wildshape into increases to <em passive-mod="1" passive-base="1">0</em>.</div>
 		<div class="passive points">0</div>
 	</div>
 	<div class="bglayer gray"></div>
 	<div class="bglayer color"></div>
 	<div class="tree">
 		<div class="tier" data-level="0" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="3"><img src="icons/dusk-broad-learning.svg">
-				<div class="description"><h2>Arcane Studies</h2><span>You can choose a spell from the wizard class' spell list <em data-mod="3" data-base="2"></em>th level and under and add it to your list of known spells.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-magic-fang.svg">
+				<div class="description"><h2>Magic Fang</h2><span>Your attacks while Wild Shaped may use your wisdom in place of your strength or dexterity for the purpose of attack and damage and your attacks while Wild Shaped are treated as magic for the purpose of overcoming damage reduction. </span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-abundant-casting.svg">
-				<div class="description"><h2>Abundant Casting</h2><span>You can now use flexible casting to create any number of spell slots or sorcery points instead of just one as a bonus action. You can also now create 6th level spell slots by spending <em data-base="11"></em> sorcery points.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-elemental-shape.svg">
+				<div class="description"><h2>Elemental Shape</h2><span>You can now use Wild Shape to transform into an air elemental, an earth elemental, a fire elemental, or a water elemental, so long as it does not exceed your maximum CR.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-echo-spell.svg">
-				<div class="description"><h2>Echo Spell (Metamagic)</h2><span> Costs <em data-base="3"></em> sorcery points. An echo spell is cast again in the same spot one round later at the start of your next turn. Only instantaneous spells with an area of effect can be echoed. Targeted spells, spells with a duration, and spells requiring concentration cannot be echoed.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-natural-shaper.svg">
+				<div class="description"><h2>Natural Shaper</h2><span> You may now Wild Shape as a bonus action instead of an action. Additionally, you can use your Wild Shape to alter your physical form in more subtle ways, as the spell Alter Self.</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="1" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-spell-efficiency.svg">
-				<div class="description"><h2>Spell Efficiency</h2><span> The cost of creating new spell slots with sorcery points is reduced by <em data-base="1"></em>. Furthermore, whenever you convert spell slots to sorcery points, you gain <em data-base="1"></em> extra sorcery point for each spell slot converted.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-wild-flurry.svg">
+				<div class="description"><h2>Wild Flurry</h2><span> You may now attack an additional time when performing a multiattack or attack action while Wild Shaped.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-spell-critical.svg">
-				<div class="description"><h2>Spell Critical</h2><span> All of your damaging spells are now capable of critically hitting. Critically hitting with a spell generates <em data-base="2"></em> sorcery points.<span class="perLevel"> per level</span>.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-trample.svg">
+				<div class="description"><h2>Trample</h2><span> While Wild Shaped as a creature that is at least one size category larger than another creature, you can pass through their areas without provoking attacks of opportunity. Additionally, you may use your reaction to make a single attack of opportunity against them if you are passing through their squares. If successful, the target must make an opposed strength check to avoid getting knocked prone.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-intensify-spell.svg">
-				<div class="description"><h2>Intensify Spell (Metamagic)</h2><span>You can cast a spell as if you were using a higher level spell slot. Costs a number of sorcery points equal to the higher level spell slot (e.g. intensifying a level 3 fireball to level 9 costs 9 sorcery points).</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-maim.svg">
+				<div class="description"><h2>Maim</h2><span>Your attacks while Wild Shaped have additional effects based on their damage type:
+				<ul>
+	<li><span class="bold-orange">Slashing:</span> You may slash another creature within 5 feet of the original target.</li>
+	<li><span class="bold-orange">Piercing:</span> The target takes 1d4 additional bleed damage at the start of every turn until healed. This bleed damage stacks up to xd4. Any source of healing will stop the bleeding. Additionally, at the end of every turn, a creature can roll a constitution save against your spell DC to stop the bleeding.</li>
+	<li><span class="bold-orange">Bludgeonging:</span> If you are the same size as the target or larger, the target must make a strength save against your spell DC to avoid being knocked down or knocked back 5 feet.</li>
+				</ul>
+				</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="2" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-widen-spell.svg">
-				<div class="description"><h2>Widen Spell (Metamagic)</h2><span>Costs <em data-base="3"></em> sorcery points. Any spell with an area of effect has its diameter/length increased by 50%.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-berserk.svg">
+				<div class="description"><h2>Berserk</h2><span>Your attacks while Wild Shaped have additional effects based on their damage type:
+				<ul>
+	<li><span class="bold-orange">Frenzy:</span> You are under the effects of Haste while Frenzied, doubling your movement speed and allowing you to make an additional single attack on your turn.</li>
+	<li><span class="bold-orange">Survival Instincts:</span> You are under the effects of Freedom of Movement while Frenzied.</li>
+	<li><span class="bold-orange">Bloodthirsty:</span> You have advantage on all attacks.</li>
+	<li><span class="bold-orange">Dauntless:</span> Your AC can no longer be less than 16, as if under the effects of Barkskin.</li>
+	<li><span class="bold-orange">Iron Hide:</span> You are under the effects of Freedom of Movement while Frenzied.</li>
+	<li><span class="bold-orange">Trueshape:</span> Your total hit points cannot be less than your base maximum HP while not Wild Shaped.</li>
+	<li><span class="bold-orange">Regeneration:</span> You gain x hp per round.</li>
+	<li><span class="bold-orange">Rage:</span> Your attacks deal additional damage equal to x.</li>
+	<li><span class="bold-orange">Feral Flurry:</span> You may now attack an additional time when performing a multiattack or attack action while Wild Shaped. Stacks with Wild Flurry.</li>
+	<li><span class="bold-orange">Pounce:</span> You may make a single attack as a bonus action.</li>
+				</ul>
+				</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-metamagic-master.svg">
-				<div class="description"><h2>Metamagic Master</h2><span>You can now apply two metamagic options to the same spell, unless otherwise noted.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-feral-instinct.svg">
+				<div class="description"><h2>Feral Instinct</h2><span>You now have two bonus actions and two reactions per round.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-maximize-spell.svg">
-				<div class="description"><h2>Maximize Spell (Metamagic)</h2><span>Costs <em data-base="3"></em> sorcery points. Any rolled values for this spell are maximized (e.g. maximum damage, maximum healing, etc).</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-leader-of-the-pack.svg">
+				<div class="description"><h2>Leader of the Pack</h2><span>Whenever you assume a new form through Wild Shape, you may grant your allies some of the <span class="bold-orange">passive traits</span> of the creature you are Wild Shaped as. Select x number of traits from your Wild Shape's stat sheet. All allies use the selected traits of your Wild Shape instead of their own, unless they have a stronger version of that trait alraedy. Trait immunities granted through Leader of the Pack does not undo existing afflictions. For example, immunity to paralysis will not cure paralysis, it will just prevent subsequent attempts at paralysis. 
+	<div><span class="bold-orange">Passive traits</span> are those traits belonging to the following list:<span class="bold-orange"> physical attribute stat (str/dex/con), physical attribute save proficiency, damage resistance, damage immunities, condition immunities, senses, languages, skill proficiencies.</span></div> </span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="3" data-invested="0" data-total="0">
-			<div class="skill push1" data-points="0" data-max="1"><img src="icons/dusk-twin-cosmic.svg">
-				<div class="description"><h2>Twin Cosmic</h2><span>As a bonus action costing <em data-base="2"></em> sorcery points <span class="perLevel"> per level</span>, you can create a shadowy clone of yourself made out of pure arcane energy. This clone has an action and a bonus action which it can use to cast any spell or cantrip you know on your turn, using up your spell slots and arcane points. Maintaining this clone costs  <em data-base="1"></em> sorcery point per round after the first. This clone moves alongside you, similar to the spell mirror image, lacks physicality, and cannot be destroyed.</span></div>
+			<div class="skill push1" data-points="0" data-max="1"><img src="icons/luven-chimeric-form.svg">
+				<div class="description"><h2>Chimeric Form</h2><span> You may now wildshape into monstrosities, not just beasts. Additionally, you can now mix parts of different creatures when wildshaped, so long as the total CR of the creatures mixed does not exceed your maximum CR. You gain the traits and abilities of all creatures you mix in this manner, choosing the higher of each creature's stats when they overlap.</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
@@ -188,72 +279,87 @@
 			<div class="column3 totalPoints">
 				<span class="totalPoints">0</span>
 			</div>
-			<legend>Sorcery</legend>
+			<legend>Tooth and Claw</legend>
 		</div>
 	</div>
 </div>
 
 <div class="treewrapper blue">
 	<div class="actionSkill"><img src="icons/dusk-runechild-passive.png" />
-		<div class="description"><h2>Runechild</h2>Passive Skill. The amount of damage you can mitigate with Glyph of Aegis increases by <em passive-mod="0" passive-base="1">0</em> per charged rune.</div>
+		<div class="description"><h2>Storm and Spirit</h2>Passive Skill. The amount of damage you can mitigate with Glyph of Aegis increases by <em passive-mod="0" passive-base="1">0</em> per charged rune.</div>
 		<div class="passive points">0</div>
 	</div>
 	<div class="bglayer gray"></div>
 	<div class="bglayer color"></div>
 	<div class="tree" unselectable="on">
 		<div class="tier" data-level="0" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-adaptive-runes.svg">
-				<div class="description"><h2>Adaptive Runes</h2><span>Choose a damage type. You now have resistance to that damage type. Additionally, whenever you are targeted with this damage type, you charge one rune. You may only charge one rune per turn in this manner. You may change which damage type you resist during a short rest/long rest. </span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-leylines.svg">
+				<div class="description"><h2>Leylines</h2><span>You can now sense where the leylines of the world are. Leylines are glowing 5 foot lines on the battlefield. Leylines rise far above the earth's surface, meaning most constructed places have a leyline. Standing on a leyline grants the following:
+				<ul>
+	<li><span class="bold-orange">Nature's Reach:</span> Doubles the range of your spells. Spells with a range of touch are turned into ranged spells with a range of 25+5x feet.</li>
+	<li><span class="bold-orange">Weight of the World:</span> Grants advantage on spell attacks and imposes disadvantage on saves against your spells.</li>
+	<li><span class="bold-orange">Nature's Guidance:</span> Your ranged spell attacks ignore half cover and three-quarters cover.</li>
+	<li><span class="bold-orange">Channel Strength:</span> The damage and healing of your spells is rolled with advantage.</li>
+				</ul>
+				</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-reflective-runes.svg">
-				<div class="description"><h2>Reflective Runes</h2><span>Whenever a spell attack is directed at you, you have a 1 in 4 chance of reflecting it. If reflected, you may redirect it towards a target of your choice by making a spell attack roll.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-innervate.svg">
+				<div class="description"><h2>Innervate</h2><span>Once per short or long rest, you may cast Innervate on a friendly target within 30 feet as a bonus action. The target regains expended spell slots equal to 2 + Math.ceil(x/2) total spell levels.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-runic-storage.svg">
-				<div class="description"><h2>Runic Storage</h2><span>Once per day, you can store a spell inside your runes and activate it at any time as a reaction. You must expend a number of charged runes equal to the spell level you're holding. This spell storage dissipates after a long rest.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-spirit-totem.svg">
+				<div class="description"><h2>Spirit Totem</h2><span>You may summon one of the three following spirit totems as a bonus action. Upon summoning it and as a bonus action thereafter, you can move the totem up to 60 feet to a point you can see. It creates an aura in a 30-foot radius around it. It counts as neither a creature nor an object. The totem persists for 1 minute or until you're incapacitated. Once you use this feature, you can't use it again until you finish a short or long rest.
+				<ul>
+	<li><span class="bold-orange">Bear Spirit:</span> The bear spirit grants you and your allies its might and endurance. Each creature of your choice in the aura when the spirit appears gains temporary hit points equal to 25 + x. In addition, you and your allies gain advantage on Strength checks and Strength saving throws while in the aura.</li>
+	<li><span class="bold-orange">Hawk Spirit:</span> he hawk spirit is a consummate hunter, aiding you and your allies with its keen sight. When a creature makes an attack roll against a target in the spirit's aura, you can use your reaction to grant advantage to that attack roll. In addition, you and your allies have advantage on Wisdom (Perception) checks while in the aura.</li>
+	<li><span class="bold-orange">Unicorn Spirit:</span> The unicorn spirit lends its protection to those nearby. You and your allies gain advantage on all ability checks made to detect creatures in the spirit's aura. In addition, if you cast a spell using a spell slot that restores hit points to any creature inside or outside the aura, each creature of your choice in the aura also regains hit points equal to your druid level.</li>
+				</ul>
+				</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="1" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-runic-resonance.svg">
-				<div class="description"><h2>Runic Resonance</h2><span>Whenever you cast a spell, you gain a number of charged runes equal to the spell level you cast.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-solid-fog.svg">
+				<div class="description"><h2>Solid Fog (5th Level Conjuration)</h2><span>5th Level Conjuration spell. Requires concentration. This spell functions like Fog Cloud, but in addition to obscuring sight, the solid fog is so thick that any creature attempting to move through it progresses at a speed of 5 feet, regardless of its normal speed, and makes all melee attack rolls with disadvantage. The vapors prevent effective ranged weapon attacks (except for magic rays and the like). A creature or object that falls into solid fog is slowed, so that each 10 feet of vapor that it passes through reduces falling damage by 1d6. A creature can’t take a 5-foot step while in solid fog. However, unlike normal fog, only a severe wind (31+ mph) disperses these vapors, and it does so in 1 round. </span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-quicksilver-runes.svg">
-				<div class="description"><h2>Quicksilver Runes</h2><span>By spending <em data-base="3"></em> charged runes as a reaction, you gain the Freedom of Movement buff until the end of your next turn.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-duality.svg">
+				<div class="description"><h2>Duality</h2><span>You may now concentrate on two spells at once without penalty. If the spell requires a bonus action to use it on subsequent turns, you may use both concentration spells as a single bonus action. If you have the feat dual-focused, you can concentrate on a third spell, incurring the same penalities on the third spell as the feat specifies.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-runic-critical.svg">
-				<div class="description"><h2>Runic Critical</h2><span>Increases your critical multiplier by <em data-base="1"></em>. Your critical strikes also charge a number of essence runes equal to your critical multiplier.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-grounding-totem.svg">
+				<div class="description"><h2>Grounding Totem</h2><span>The next magical spell cast by creatures you designate into this area of effect is automatically counterspelled. For area of effect spells, if even an portion of the area of effect is within the Grounding Totem's radius, the entire spell is grounded. This expends the totem. Grounding totem always succeeds and cannot be counterspelled or dispelled. Once you use this feature, you can't use it again until you finish a short or long rest.
+				<div>You may summon a totem to your hand as a bonus action. Upon summoning it and as a bonus action thereafter, you can move the totem up to 60 feet to a point you can see. It creates an aura in a 30-foot radius around it. It counts as neither a creature nor an object. The totem persists for 1 minute or until you're incapacitated.</div>
+				</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="2" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-runic-blade.svg">
-				<div class="description"><h2>Runic Blade</h2><span>As a bonus action, you can spend <em data-base="6"></em>charged runes to guarantee your next attack melee attack is a critical hit.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-cyclone.svg">
+				<div class="description"><h2>Cyclone (9th Level Evocation)</h2><span>You may summon one of the three following spirit totems as a bonus action. Upon summoning it and as a bonus action thereafter, you can move the totem up to 60 feet to a point you can see. It creates an aura in a 30-foot radius around it. It counts as neither a creature nor an object. The totem persists for 1 minute or until you're incapacitated. Once you use this feature, you can't use it again until you finish a short or long rest.
+				<ul>
+	<li>If the cyclone passes through a creature's square, the creature must pass a dexterity save or it will take 8d6 bludgeoning damage initially and at the start of every turn it remains within the cyclone's radius. </li>
+	<li>If the creature fails its save and it is large or smaller, it is caught in the cyclone, being restrained and caught by it until the spell ends or until it somehow manages to teleport/anchor itself out of its effect. While restrained in this manner, a creature is carried in the cyclone, moving along with it as it crosses the battlefield. Teleporting out of a cyclone requires a spell check against your spell save DC.</li>
+	<li>For huge and gargantuan creatures, they must make a strength save against your spell DC or else they are restrained by this cyclone while it is on top of them. If they succeed, the cyclone is treated as difficult terrain.</li>
+	<li>A creature is also stunned the first time it is restrained by the cyclone and must roll a constitution saving throw at the end of every turn to stop being stunned. </li>
+				</ul></span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-spell-absorption.svg">
-				<div class="description"><h2>Spell Absorption</h2><span>By spending a number of charged runes equal to a spell that is targeting you, either directly or within its area of effect, you can attempt to counterspell it. If successful, the spell gets absorbed by your runes and can be later cast as if it were a known spell. You can only carry one absorbed spell at a time. This absorbed spell dissipates upon use or long rest.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-gathering-storm.svg">
+				<div class="description"><h2>Gathering Storm</h2><span>You learn the wizard spells Lighting Bolt and Chain Lightning and always have them prepared, not counting against your list of prepared spells. Additionally, every time you cast a spell, you gain Gathering Storm stacks equal to the spell slot used, stacking to a maximum of 9. You may use these stacks to cast a Lightning Bolt or Chain Lightning without using up a spell slot, expending a number of stacks equal to the spell level used to cast it. Gathering Storm stacks expire when used or after 1 hour.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-hardened-runes.svg">
-				<div class="description"><h2>Hardened Runes</h2><span> Your AC and saving throws increase by <em data-base="3"></em>.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-windfury-totem.svg">
+				<div class="description"><h2>Windfury Totem</h2><span> While windfury totem is active, all allies within 30 feet of it have a 25% chance of striking twice when making a melee attack. 
+				<div>You may summon a totem to your hand as a bonus action. Upon summoning it and as a bonus action thereafter, you can move the totem up to 60 feet to a point you can see. It creates an aura in a 30-foot radius around it. It counts as neither a creature nor an object. The totem persists for 1 minute or until you're incapacitated.</div>
+			</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="3" data-invested="0" data-total="0">
-			<div class="skill push1" data-points="0" data-max="1"><img src="icons/dusk-arcane-avatar.svg">
-				<div class="description"><h2>Arcane Avatar</h2><span>You now have the benefits of the Arcane Exemplar Form passively. By spending <em data-base="6"></em> charged runes, you shift into an Arcane Avatar for 1 minute, gaining the following bonuses instead:
-				<ul>
-					<li>A flying speed of 60 feet</li> 
-					<li>+2 to attack and spell DC </li>
-					<li>Resistance to all damage </li> 
-					<li>A healing factor of 1d8 hp per round. </li>
-					<li>When you cast a spell of 1st level or higher, you regain hit points equal to twice the spell’s level.</li>
-				</ul>
-				You are no longer exhausted after using your Perfect Arcane Avatar and can act as soon as this form ends. Once you use this feature, you must finish a long rest before you can use it again. </span></div>
+			<div class="skill push1" data-points="0" data-max="1"><img src="icons/luven-spirit-guide.svg">
+				<div class="description"><h2>Spirit Guide</h2><span>Once per short or long rest, you may summon a spirit guide to your side. The spirit guide is incorporeal and cannot be targeted directly by effects while you are conscious (all such attacks are directed at you instead). This spirit guide has an action and a bonus action which it can use to cast any spell or cantrip you know on your turn, using up your spell slots. The spirit guide lasts for 1 minute and persists even while you are incapacitated or unconscious. </span></div>
 				<div class="points"></div>
 			</div>
 		</div>
