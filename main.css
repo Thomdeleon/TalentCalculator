@@ -415,12 +415,22 @@ legend {
 
 .bold-orange {
   font-weight:bold;
-  color: #F80;	
+  color: #F80;
+  text-shadow:
+               -1px -1px 0 black,
+                1px -1px 0 black,
+               -1px 1px 0 black,
+                1px 1px 0 black;
 }
 
 .bold-green {
   font-weight:bold;
   color: #0B0;
+  text-shadow:
+               -1px -1px 0 black,
+                1px -1px 0 black,
+               -1px 1px 0 black,
+                1px 1px 0 black;  
 }
 
 .skill:hover .description {
@@ -437,12 +447,29 @@ legend {
   display: none;
 }
 
+legend {
+  text-shadow:
+		   -1px -1px 0 black,
+			1px -1px 0 black,
+		   -1px 1px 0 black,
+			1px 1px 0 black;
+}
+
+strong {
+  text-shadow:
+               -1px -1px 0 black,
+                1px -1px 0 black,
+               -1px 1px 0 black,
+                1px 1px 0 black;	
+}
+
 .green legend {
   color: #41974D;
+  
 }
 
 .green h2 {
-	color: #41974D;
+  color: #41974D;
 }
 
 .blue legend {
@@ -555,5 +582,10 @@ img.portrait {
 
 .yellow-text {
 	color: #FFFF00;
+	text-shadow:
+			   -1px -1px 0 black,
+				1px -1px 0 black,
+			   -1px 1px 0 black,
+				1px 1px 0 black;
 }
 
