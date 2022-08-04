@@ -441,7 +441,15 @@ legend {
   color: #41974D;
 }
 
+.green h2 {
+	color: #41974D;
+}
+
 .blue legend {
+  color: #2A87C7;
+}
+
+.blue h2 {
   color: #2A87C7;
 }
 
@@ -449,7 +457,15 @@ legend {
   color: #A93640;
 }
 
+.red h2 {
+  color: #A93640;
+}
+
 .purple legend {
+  color: #a859ec;
+}
+
+.purple h2 {
   color: #a859ec;
 }
 
@@ -457,7 +473,15 @@ legend {
   color: #aa7024;
 }
 
+.orange h2 {
+  color: #aa7024;
+}
+
 .teal legend {
+  color: #37c3c3;
+}
+
+.teal h2 {
   color: #37c3c3;
 }
 

@@ -173,11 +173,13 @@ function updateStats() {
 	});
 	$("span.charLevel").html(20+total);
 	var descriptions = "";
+	
 	//Begin passive skill functions
 	$("div.actionSkill").each(function(index) {
 		var p = parseInt($(this).find("div.passive").html());
 		if (p > 0) {
-			descriptions += "<div class='skillText'>" + $(this).children("div.description").html().replace("<h2>","<strong>").replace("</h2>", " " + p + ":</strong><div class='descriptionText'>") + "</div></div>";
+			treeColor = rgb2hex($(this).find('h2').css('color'));
+			descriptions += "<div class='skillText'>" + $(this).children("div.description").html().replace("<h2>","<strong style='color: " + treeColor + "'>").replace("</h2>", " " + p + ":</strong><div class='descriptionText'>") + "</div></div>";
 		}
 	});
 	
@@ -185,13 +187,23 @@ function updateStats() {
 	$("div.skill").each(function(index) {
 		var p = parseInt($(this).attr("data-points"));
 		if (p > 0) {
-			descriptions += "<div class='skillText'>" + $(this).children("div.description").html().replace("<h2>","<strong>").replace("</h2>", " " + p + ":</strong><div class='descriptionText'>") + "</div></div>";
+			treeColor = rgb2hex($(this).find('h2').css('color'));
+			descriptions += "<div class='skillText'>" + $(this).children("div.description").html().replace("<h2>","<strong style='color: " + treeColor + "'>").replace("</h2>", " " + p + ":</strong><div class='descriptionText'>") + "</div></div>";
 		}
 	});
 	$("div.descriptionContainer").html(descriptions);
 	var url = window.location.href.split("#")[0] + "#" + getHash();
 	$("a.permalink").attr("href",url);
 	window.location.replace(url);
+}
+
+//Function to convert hex format to a rgb color
+function rgb2hex(orig){
+ var rgb = orig.replace(/\s/g,'').match(/^rgba?\((\d+),(\d+),(\d+)/i);
+ return (rgb && rgb.length === 4) ? "#" +
+  ("0" + parseInt(rgb[1],10).toString(16)).slice(-2) +
+  ("0" + parseInt(rgb[2],10).toString(16)).slice(-2) +
+  ("0" + parseInt(rgb[3],10).toString(16)).slice(-2) : orig;
 }
 
 function loadHash(hash) {
