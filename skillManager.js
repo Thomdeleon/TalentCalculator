@@ -178,7 +178,7 @@ function updateStats() {
 	$("div.actionSkill").each(function(index) {
 		var p = parseInt($(this).find("div.passive").html());
 		if (p > 0) {
-			treeColor = rgb2hex($(this).find('h2').css('color'));
+			treeColor = adjust(rgb2hex($(this).find('h2').css('color')), 35);
 			descriptions += "<div class='skillText'>" + $(this).children("div.description").html().replace("<h2>","<strong style='color: " + treeColor + "'>").replace("</h2>", " " + p + ":</strong><div class='descriptionText'>") + "</div></div>";
 		}
 	});
@@ -187,7 +187,7 @@ function updateStats() {
 	$("div.skill").each(function(index) {
 		var p = parseInt($(this).attr("data-points"));
 		if (p > 0) {
-			treeColor = rgb2hex($(this).find('h2').css('color'));
+			treeColor = adjust(rgb2hex($(this).find('h2').css('color')), 35);
 			descriptions += "<div class='skillText'>" + $(this).children("div.description").html().replace("<h2>","<strong style='color: " + treeColor + "'>").replace("</h2>", " " + p + ":</strong><div class='descriptionText'>") + "</div></div>";
 		}
 	});
@@ -204,6 +204,11 @@ function rgb2hex(orig){
   ("0" + parseInt(rgb[1],10).toString(16)).slice(-2) +
   ("0" + parseInt(rgb[2],10).toString(16)).slice(-2) +
   ("0" + parseInt(rgb[3],10).toString(16)).slice(-2) : orig;
+}
+
+//Lightens colors
+function adjust(color, amount) {
+    return '#' + color.replace(/^#/, '').replace(/../g, color => ('0'+Math.min(255, Math.max(0, parseInt(color, 16) + amount)).toString(16)).substr(-2));
 }
 
 function loadHash(hash) {
