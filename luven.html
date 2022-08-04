@@ -94,14 +94,14 @@
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-wonderberry-bush.svg">
-				<div class="description"><h2>Wonderberry Bush (4th Level Transmutation)</h2><span>4th level Transmutation Spell. Casting time 1 minute. Requires ground that can support plant life. You magically grow a Wonderberry Bush full of 4d12+12 berries. For each 1d12+3 berries, you may choose one of the four following berry types. Up to 12 berries can be consumed at one time in the same way one would drink a potion. Harvested berries expire after 24 hours. Harvesting a full bush requires a minute of work. Unharvested berries expire after 3 days. Wonderberry Bushes regrow their berries after 1 year. All of the listed berries heal for 1d4+Math.floor(x/2), in addition to their listed affects.
+				<div class="description"><h2>Wonderberry Bush (4th Level Transmutation)</h2><span>4th level Transmutation Spell. Casting time 1 minute. Requires ground that can support plant life. You magically grow a Wonderberry Bush full of 4d12+12 berries. For each 1d12+3 berries, you may choose one of the four following berry types. Up to 12 berries can be consumed at one time in the same way one would drink a potion. Harvested berries expire after 24 hours. Harvesting a full bush requires a minute of work. Unharvested berries expire after 3 days. Wonderberry Bushes regrow their berries after 1 year. All of the listed berries heal for 1d4+<span class="tpScaling" tpScaling-base="1" tpScaling-stepFloor="2">0</span>, in addition to their listed affects.
 				<ul>
 	<li><span class="bold-orange">Butterberry:</span> Tastes incredible. Improves the quality of any dishes made with it.</li>
 	<li><span class="bold-orange">Miracle Berry:</span> Cures the poisoned, blinded, or deafened condition. Makes sour things taste sweet.</li>
 	<li><span class="bold-orange">Cloudberry:</span> Makes you feel light as a cloud. Grants Gaseous Form for 1 minute.</li>
 	<li><span class="bold-orange">Meadberry:</span> You have advantage on all concentration checks, as well as on any intelligence, wisdom, or charisma saving throw.</li>
 	<li><span class="bold-orange">Accelerated Growth:</span> <span class="bold-green">Costs 1 Seed of Life.</span> Casting time of Wonderberry Bush is reduced to 1 action.  </li>
-	<li><span class="bold-orange">Luscious Berries:</span> <span class="bold-green">Costs 2 Seeds of Life.</span> All berries heal for 1d6+Math.floor(x) instead.</li>
+	<li><span class="bold-orange">Luscious Berries:</span> <span class="bold-green">Costs 2 Seeds of Life.</span> All berries heal for 1d6+<span class="tpScaling" tpScaling-base="1">0</span> instead.</li>
 	<li><span class="bold-orange">Circle of Life:</span> <span class="bold-green">Costs 3 Seeds of Life.</span> Regain your 4th level spell slot after casting Wonderberry Bush. </li>
 				</ul>
 				</span></div>
@@ -121,7 +121,7 @@
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-regrowth.svg">
-				<div class="description"><h2>Regrowth</h2><span> Your next healing spell also heals over time, restoring an amount equal to the minimum dice roll at the start of every turn for x turns. If the healing is a fixed amount (such as with the spell Heal), it heals 1/5th of its normal amount every turn. You may apply regrowth to any healing spell once per short rest. The Regrowth effect ends when the target drops to zero hit points or whenever the duration ends.
+				<div class="description"><h2>Regrowth</h2><span> Your next healing spell also heals over time, restoring an amount equal to the minimum dice roll at the start of every turn for <span class="tpScaling" tpScaling-base="1">0</span> turns. If the healing is a fixed amount (such as with the spell Heal), it heals 1/5th of its normal amount every turn. You may apply regrowth to any healing spell once per short rest. The Regrowth effect ends when the target drops to zero hit points or whenever the duration ends.
 				<ul>
 	<li><span class="bold-orange">Lifebloom:</span> <span class="bold-green">Costs 1 Seed of Life.</span> As a bonus action, the target gains all of its remaining healing over time instantly.</li>
 	<li><span class="bold-orange">Regenerate:</span> <span class="bold-green">Costs 5 Seeds of Life.</span> Your regrowth ability now no longer ends when the target drops to 0 hp. Upon dropping to 0 health, a target with regrowth must still make a death save, but is instantly brought back above 0 hp thereafter.</li>
@@ -171,7 +171,7 @@
 				<ul>
 	<li><span class="bold-orange">Detachment (Stem):</span> As an action, you remove all negative and positive conditions from a target creature within 60 feet.</li>
 	<li><span class="bold-orange">Rebirth (Pistil):</span> As an action, restore a creature within touch range to full health or restore a creature who has died in the past day back to life with 1/2 health. If the one who summons the black lotus dies, they are automatically resurrected with half health on their next turn by this effect instead.</li>
-	<li><span class="bold-orange">Enlightenment (Petals):</span> Your next single target healing or restoration spell affects x creatures you designate within a 60 foot range.</li>
+	<li><span class="bold-orange">Enlightenment (Petals):</span> Your next single target healing or restoration spell affects <span class="tpScaling" tpScaling-base="1">0</span> creatures you designate within a 60 foot range.</li>
 	<li><span class="bold-orange">Circle of Life:</span> <span class="bold-green">Costs 7 Seeds of Life.</span> You regain the spell slot used to summon the Black Lotus.</li>
 				</ul>
 				</span></div>
@@ -251,8 +251,8 @@
 	<li><span class="bold-orange">Dauntless:</span> Your AC can no longer be less than 16, as if under the effects of Barkskin.</li>
 	<li><span class="bold-orange">Iron Hide:</span> You are under the effects of Freedom of Movement while Frenzied.</li>
 	<li><span class="bold-orange">Trueshape:</span> Your total hit points cannot be less than your base maximum HP while not Wild Shaped.</li>
-	<li><span class="bold-orange">Regeneration:</span> You gain x hp per round.</li>
-	<li><span class="bold-orange">Rage:</span> Your attacks deal additional damage equal to x.</li>
+	<li><span class="bold-orange">Regeneration:</span> You gain <span class="tpScaling" tpScaling-base="1">0</span> hp per round.</li>
+	<li><span class="bold-orange">Rage:</span> Your attacks deal additional damage equal to <span class="tpScaling" tpScaling-base="1">0</span>.</li>
 	<li><span class="bold-orange">Feral Flurry:</span> You may now attack an additional time when performing a multiattack or attack action while Wild Shaped. Stacks with Wild Flurry.</li>
 	<li><span class="bold-orange">Pounce:</span> You may make a single attack as a bonus action.</li>
 				</ul>
@@ -264,7 +264,7 @@
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-leader-of-the-pack.svg">
-				<div class="description"><h2>Leader of the Pack</h2><span>Whenever you assume a new form through Wild Shape, you may grant your allies some of the <span class="bold-orange">passive traits</span> of the creature you are Wild Shaped as. Select x number of traits from your Wild Shape's stat sheet. All allies use the selected traits of your Wild Shape instead of their own, unless they have a stronger version of that trait alraedy. Trait immunities granted through Leader of the Pack does not undo existing afflictions. For example, immunity to paralysis will not cure paralysis, it will just prevent subsequent attempts at paralysis. 
+				<div class="description"><h2>Leader of the Pack</h2><span>Whenever you assume a new form through Wild Shape, you may grant your allies some of the <span class="bold-orange">passive traits</span> of the creature you are Wild Shaped as. Select <span class="tpScaling" tpScaling-base="1">0</span> number of traits from your Wild Shape's stat sheet. All allies use the selected traits of your Wild Shape instead of their own, unless they have a stronger version of that trait alraedy. Trait immunities granted through Leader of the Pack does not undo existing afflictions. For example, immunity to paralysis will not cure paralysis, it will just prevent subsequent attempts at paralysis. 
 	<div><span class="bold-orange">Passive traits</span> are those traits belonging to the following list:<span class="bold-orange"> physical attribute stat (str/dex/con), physical attribute save proficiency, damage resistance, damage immunities, condition immunities, senses, languages, skill proficiencies.</span></div> </span></div>
 				<div class="points"></div>
 			</div>
@@ -305,13 +305,13 @@
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-innervate.svg">
-				<div class="description"><h2>Innervate</h2><span>Once per short or long rest, you may cast Innervate on a friendly target within 30 feet as a bonus action. The target regains expended spell slots equal to 2 + Math.ceil(x/2) total spell levels.</span></div>
+				<div class="description"><h2>Innervate</h2><span>Once per short or long rest, you may cast Innervate on a friendly target within 30 feet as a bonus action. The target regains expended spell slots equal to 2 + <span class="tpScaling" tpScaling-base="1" tpScaling-step="2">0</span> total spell levels.</span></div>
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/luven-spirit-totem.svg">
 				<div class="description"><h2>Spirit Totem</h2><span>You may summon one of the three following spirit totems as a bonus action. Upon summoning it and as a bonus action thereafter, you can move the totem up to 60 feet to a point you can see. It creates an aura in a 30-foot radius around it. It counts as neither a creature nor an object. The totem persists for 1 minute or until you're incapacitated. Once you use this feature, you can't use it again until you finish a short or long rest.
 				<ul>
-	<li><span class="bold-orange">Bear Spirit:</span> The bear spirit grants you and your allies its might and endurance. Each creature of your choice in the aura when the spirit appears gains temporary hit points equal to 25 + x. In addition, you and your allies gain advantage on Strength checks and Strength saving throws while in the aura.</li>
+	<li><span class="bold-orange">Bear Spirit:</span> The bear spirit grants you and your allies its might and endurance. Each creature of your choice in the aura when the spirit appears gains temporary hit points equal to 25 + <span class="tpScaling" tpScaling-base="1">0</span>. In addition, you and your allies gain advantage on Strength checks and Strength saving throws while in the aura.</li>
 	<li><span class="bold-orange">Hawk Spirit:</span> he hawk spirit is a consummate hunter, aiding you and your allies with its keen sight. When a creature makes an attack roll against a target in the spirit's aura, you can use your reaction to grant advantage to that attack roll. In addition, you and your allies have advantage on Wisdom (Perception) checks while in the aura.</li>
 	<li><span class="bold-orange">Unicorn Spirit:</span> The unicorn spirit lends its protection to those nearby. You and your allies gain advantage on all ability checks made to detect creatures in the spirit's aura. In addition, if you cast a spell using a spell slot that restores hit points to any creature inside or outside the aura, each creature of your choice in the aura also regains hit points equal to your druid level.</li>
 				</ul>
