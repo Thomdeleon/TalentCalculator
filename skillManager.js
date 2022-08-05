@@ -122,8 +122,12 @@ function updateTree(treeHandle) {
 			var stepFloor = parseFloat($(this).attr("tpScaling-stepFloor")); 
 			if (isNaN(mod)) mod = 0;
 			if (isNaN(step)) step = 1;
-			if (isNaN(stepFloor)) stepFloor = 1;
-			var sum = Math.floor(Math.ceil((totalPoints * base/step) + mod)/stepFloor);
+			var sum = 1;
+			if (isNaN(stepFloor)){
+				sum = Math.ceil(totalPoints/step)*base + mod;
+			} else {
+				sum = Math.floor(totalPoints/stepFloor)*base + mod;
+			}
 			var plus = ($(this).attr("tpScaling-base").substring(0,1) === "+" ? "+" : "");
 			$(this).html((sum > 0 ? plus : (sum == 0 ? "" : "-")) + sum);
 		});	
@@ -139,7 +143,7 @@ function updateTree(treeHandle) {
 		var step = parseFloat($(this).attr("passive-step"));
 		if (isNaN(mod)) mod = 0;
 		if (isNaN(step)) step = 1;
-		var sum = Math.ceil((totalPoints * base + mod)/step);
+		var sum = Math.ceil(totalPoints/step)*base + mod;
 		var plus = ($(this).attr("passive-base").substring(0,1) === "+" ? "+" : "");
 		$(this).html((sum > 0 ? plus : (sum == 0 ? "" : "-")) + sum);
 	});
