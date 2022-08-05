@@ -123,7 +123,6 @@ function updateTree(treeHandle) {
 			if (isNaN(mod)) mod = 0;
 			if (isNaN(step)) step = 1;
 			if (isNaN(stepFloor)) stepFloor = 1;
-			console.log("totalPoints is " + totalPoints);
 			var sum = Math.floor(Math.ceil((totalPoints * base/step) + mod)/stepFloor);
 			var plus = ($(this).attr("tpScaling-base").substring(0,1) === "+" ? "+" : "");
 			$(this).html((sum > 0 ? plus : (sum == 0 ? "" : "-")) + sum);
@@ -140,7 +139,7 @@ function updateTree(treeHandle) {
 		var step = parseFloat($(this).attr("passive-step"));
 		if (isNaN(mod)) mod = 0;
 		if (isNaN(step)) step = 1;
-		var sum = Math.ceil((Math.round((Math.max(totalPoints,1) * base + mod)*100)/100)/step);
+		var sum = Math.ceil((totalPoints * base + mod)/step);
 		var plus = ($(this).attr("passive-base").substring(0,1) === "+" ? "+" : "");
 		$(this).html((sum > 0 ? plus : (sum == 0 ? "" : "-")) + sum);
 	});
