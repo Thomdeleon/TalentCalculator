@@ -107,26 +107,29 @@ function updateTree(treeHandle) {
 				var sum = Math.round((Math.max(p,1) * base + mod)*100)/100; //Math.round to eliminate goofy float errors
 				var plus = ($(this).attr("data-base").substring(0,1) === "+" ? "+" : "");
 				$(this).html((sum > 0 ? plus : (sum == 0 ? "" : "-")) + sum);
-			});
-			//Begin scaling based on points spent in tree
-			$(this).find("span.tpScaling").each(function(index) {
-				var base = parseFloat($(this).attr("tpScaling-base"));
-				var mod = parseFloat($(this).attr("tpScaling-mod"));
-				var step = parseFloat($(this).attr("tpScaling-step"));	//step ceiling
-				var stepFloor = parseFloat($(this).attr("tpScaling-stepFloor")); 
-				if (isNaN(mod)) mod = 0;
-				if (isNaN(step)) step = 1;
-				if (isNaN(stepFloor)) stepFloor = 1;
-				var sum = Math.floor(Math.ceil((Math.round((Math.max(totalPoints,1) * base + mod)*100)/100)/step)/stepFloor);
-				var plus = ($(this).attr("tpScaling-base").substring(0,1) === "+" ? "+" : "");
-				$(this).html((sum > 0 ? plus : (sum == 0 ? "" : "-")) + sum);
-			});
-			//End scaling based on points spent in tree
-			
+			});		
 		});
 		$(this).attr("data-total", tierTotal);
 	});
 	$(treeHandle).find("span.totalPoints").html(totalPoints);
+	
+	//Begin scaling based on points spent in tree
+	$(treeHandle).find("div.tier").each(function(index) {
+		$(this).find("span.tpScaling").each(function(index) {
+			var base = parseFloat($(this).attr("tpScaling-base"));
+			var mod = parseFloat($(this).attr("tpScaling-mod"));
+			var step = parseFloat($(this).attr("tpScaling-step"));	//step ceiling
+			var stepFloor = parseFloat($(this).attr("tpScaling-stepFloor")); 
+			if (isNaN(mod)) mod = 0;
+			if (isNaN(step)) step = 1;
+			if (isNaN(stepFloor)) stepFloor = 1;
+			console.log("totalPoints is " + totalPoints);
+			var sum = Math.floor(Math.ceil((totalPoints * base/step) + mod)/stepFloor);
+			var plus = ($(this).attr("tpScaling-base").substring(0,1) === "+" ? "+" : "");
+			$(this).html((sum > 0 ? plus : (sum == 0 ? "" : "-")) + sum);
+		});	
+	});
+	//End scaling based on points spent in tree
 	
 	//Begin passive skill functions
 	var actionSkill = $(treeHandle).parentsUntil(".treeCollection").find(".actionSkill");
