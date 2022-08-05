@@ -162,10 +162,6 @@
 	<div class="bglayer color"></div>
 	<div class="tree">
 		<div class="tier" data-level="0" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-still-stance.svg">
-				<div class="description"><h2>Still Stance (Stance)</h2><span>Stance. You gain 2 extra reactions while in still stance, but your movement is halved. </span></div>
-				<div class="points"></div>
-			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-graceful-strike.svg">
 				<div class="description"><h2>Graceful Strike</h2><span>Whenever you successfully stun a target with stunning strike, you are refunded 1 ki point.</span></div>
 				<div class="points"></div>
@@ -174,10 +170,14 @@
 				<div class="description"><h2>Counterstrike</h2><span>As a reaction, before an attack roll is made, you can perform an attack of opportunity in response to an incoming melee attack. If your attack roll is lower than the incoming attack, you get hit, regardless of your AC. If your attack roll is higher, you avoid the attack and can perform an attack of opportunity in response. </span></div>
 				<div class="points"></div>
 			</div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-still-stance.svg">
+				<div class="description"><h2>Still Stance (Stance)</h2><span>Stance. You gain 2 extra reactions while in still stance, but your movement is halved. </span></div>
+				<div class="points"></div>
+			</div>
 		</div>
 		<div class="tier" data-level="1" data-invested="0" data-total="0">
 			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-pressure-points.svg">
-				<div class="description"><h2>Pressure Points</h2><span>Performing consecutive melee attacks against a single target builds up a stacking combo counter that can be detonated after landing a melee strike, dealing your martial arts dice in damage per stack. Missing an attack, switching targets, or not attacking the target for a turn resets the counter. The maximum number of stacks you can have is equal to your points in Combat Idol. Once expended, you can only start building stacks again at the start of your next turn. </span></div>
+				<div class="description"><h2>Pressure Points</h2><span>Performing consecutive melee attacks against a single target builds up a stacking combo counter that can be detonated after landing a melee strike, dealing your martial arts dice in damage per stack. Missing an attack, switching targets, or not attacking the target for a turn resets the counter. The maximum number of stacks you can have is equal to <span class="tpScaling" tpScaling-base="1" tpScaling-mod="0" tpScaling-step="1">0</span>. Once expended, you can only start building stacks again at the start of your next turn. </span></div>
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-forestallment.svg">
@@ -185,21 +185,21 @@
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-ripple.svg">
-				<div class="description"><h2>Ripple (Stance)</h2><span>Stance. Whenever someone successfully strikes you in melee, you block some/all of the damage of the attack. Subtract your monk level + your points in combat idol from the damage of the incoming melee attack. In response, you can also choose to counterattack as a reaction, dealing your normal damage plus all of the damage you blocked. This counterattack is treated as an attack of opportunity.</span></div>
+				<div class="description"><h2>Ripple (Stance)</h2><span>Stance. Whenever someone successfully strikes you in melee, you block some/all of the damage of the attack. Subtract <span class="tpScaling" tpScaling-base="1" tpScaling-mod="2" tpScaling-step="2">0</span>d10 + 20 from the damage of the incoming melee attack. In response, you can also choose to counterattack as a reaction, dealing your normal damage plus all of the damage you blocked. This counterattack is treated as an attack of opportunity.</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="2" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-full-attack.svg">
-				<div class="description"><h2>Full Attack (Stance)</h2><span>Stance. While in this stance, you can now attack three times instead of two when performing the attack action. Furthermore, you can perform a Flurry of Blows in place of each attack when performing the attack action.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-stance-dance.svg">
+				<div class="description"><h2>Stance Dance</h2><span>You may switch stances whenever you perform a dance. </span></div>
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-lightning-reflexes.svg">
 				<div class="description"><h2>Lightning Reflexes</h2><span>You gain 1 additional reaction per round. Additionally, you now threaten a 15 foot zone and may perform a flurry of blows as an attack of opportunity. Performing an attack of opportunity within this zone moves you to the target.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-stance-dance.svg">
-				<div class="description"><h2>Stance Dance</h2><span>You may switch stances whenever you perform a dance. </span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-full-attack.svg">
+				<div class="description"><h2>Full Attack (Stance)</h2><span>Stance. While in this stance, you can now attack three times instead of two when performing the attack action. Furthermore, you can perform a Flurry of Blows in place of each attack when performing the attack action.</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
@@ -235,8 +235,8 @@
 				<div class="description"><h2>Lunar Stance (Stance)</h2><span>Stance. While using Lunar Stance, you become light as a feather, reducing your weight to anywhere from your normal weight to 1/1000th of your normal weight (your choice) and increasing your jump height by 10 times. Whenever you successfully perform a stunning strike while in this stance, you can also choose to similarly reduce the target creature/object's weight while they are stunned. <div class="extra-text hidden">You may touch a willing creature and reduce their weight while you are holding onto them for 0 ki points.</div> </span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-gravity-slingshot.svg">
-				<div class="description"><h2>Gravity Slingshot</h2><span>Your Deflect Missiles improves to the following: You can use your Reaction to deflect an incoming ranged weapon attack OR ranged spell attack. When you do so, the damage you take from the attack is reduced by 2d10 + your Dexterity modifier + your Charisma modifier + your dancer level + points you've spent in Gravity Control. If you reduce the damage to 0, you can spend 1 ki point to use your gravitational manipulation to slingshot it towards a target of your choice. Make a ranged attack roll. If successful, the redirected attack deals as much damage as it would have dealt to you. <div class="extra-text hidden">You can store a spell or projectile instead of launching it back immediately. You can store up to three projectiles in this manner. While stored, they orbit around you until you decide to use them. These projectiles stop orbiting whenever you are stunned, paralyzed, or unconscious.</div></span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-tidal-lock.svg">
+				<div class="description"><h2>Tidal Lock</h2><span>Whenever you successfully perform a stunning strike on a target that is in midair, they will stay stuck in midair while stunned, as if under the effects of Immovable Rod. You can also subject yourself to the same effect for 1 ki point as a reaction, lasting until cancelled. This effect can be used to brace yourself against impact or to stabilize yourself, as if you were standing on solid ground. <div class="extra-text hidden">No longer costs a ki point to use on yourself and the weight limit triples from 8000 lbs to 24000 lbs</div></span></div>
 				<div class="points"></div>
 			</div>
 		</div>
@@ -249,8 +249,8 @@
 				<div class="description"><h2>Shooting Stars (Stance)</h2><span>Stance. You can perform ranged unarmed attacks with a 60+(gravity control*5)/300+(gravity control*25) ft range. You need rocks, debris, or other fist sized projectiles in order to use Shooting Stars. These projectiles orbit you while Shooting Stars Stance is active. <div class="extra-text hidden">As an action, you may throw a large rock/object which deals three times your melee attack damage and can knock down a target if they fail a strength save against your DC.</div></span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-tidal-lock.svg">
-				<div class="description"><h2>Tidal Lock</h2><span>Whenever you successfully perform a stunning strike on a target that is in midair, they will stay stuck in midair while stunned, as if under the effects of Immovable Rod. You can also subject yourself to the same effect for 1 ki point as a reaction, lasting until cancelled. This effect can be used to brace yourself against impact or to stabilize yourself, as if you were standing on solid ground. <div class="extra-text hidden">No longer costs a ki point to use on yourself and the weight limit triples from 8000 lbs to 24000 lbs</div></span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-gravity-slingshot.svg">
+				<div class="description"><h2>Gravity Slingshot</h2><span>Your Deflect Missiles improves to the following: You can use your Reaction to deflect an incoming ranged weapon attack OR ranged spell attack. When you do so, the damage you take from the attack is reduced by <span class="tpScaling" tpScaling-base="1" tpScaling-mod="2" tpScaling-step="2">0</span>d10 + 20. If you reduce the damage to 0, you can spend 1 ki point to use your gravitational manipulation to slingshot it towards a target of your choice. Make a ranged attack roll. If successful, the redirected attack deals as much damage as it would have dealt to you. <div class="extra-text hidden">You can store a spell or projectile instead of launching it back immediately. You can store up to three projectiles in this manner. While stored, they orbit around you until you decide to use them. These projectiles stop orbiting whenever you are stunned, paralyzed, or unconscious.</div></span></div>
 				<div class="points"></div>
 			</div>
 		</div>
