@@ -101,7 +101,7 @@
 		</div>
 		<div class="tier" data-level="1" data-invested="0" data-total="0">
 			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-two-step.svg">
-				<div class="description"><h2>Two Step (Dance)</h2><span>Dance. Allied target gains haste until the end of your next turn.</span></div>
+				<div class="description"><h2>Two Step (Dance)</h2><span>Dance. Costs 1 ki point. Target within 60 feet gains haste until the end of your next turn. </span></div>
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-fan-dance.svg">
@@ -115,7 +115,7 @@
 		</div>
 		<div class="tier" data-level="2" data-invested="0" data-total="0">
 			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-dance-partner.svg">
-				<div class="description"><h2>Dance Partner</h2><span>Once per combat, after you roll for initiative, you may choose to designate a dance partner. In doing so, you move your initiative to whatever your dance partner rolled and take your turn for the remainder of combat at the same time as they do. You gain the following benefits:
+				<div class="description"><h2>Dance Partner</h2><span>Once per combat, after you roll for initiative, you may choose to designate a dance partner. In doing so, you and your partner share the same initiative, choosing either initiative roll, and you both take your turn at the same time for the remainder of combat. You gain the following benefits:
 				<ul>
 					<li>Synchronized movement: You and your dance partner share the same movespeed, whichever speed is higher.</li> 
 					<li>Two to Tango: Whenever you perform a dance for another ally, your dance partner gains the benefits of that dance as well. Whenever you perform a dance for your dance partner, you gain the benefits of that dance as well.</li>
@@ -126,8 +126,8 @@
 			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-soloist.svg">
 				<div class="description"><h2>Soloist</h2><span>Once per combat, after you roll for initiative, you may choose to be a soloist (a Soloist may not designate a Dance Partner). A Soloist gains the following benefits:
 				<ul>
-					<li>Aria: Your allies are always under the effect of countercharm while in your presence.</li> 
-					<li>Superstar: Your presence is so overwhelming, enemies have trouble attacking you. Whenever any creature tries to attack you for the first time on a turn, the attacker must make a Charisma saving throw against your spell save DC. On a failed save, it can't attack you on this turn, and it must choose a new target for its attack or the attack is wasted. On a successful save, it can attack you on this turn, but it has disadvantage on any saving throw it makes against your abilities on your next turn.</li>
+					<li>Aria: Your allies all gain one inspiration die at the start of combat and are always under the effect of countercharm while in your presence.</li>
+					<li>Superstar: Your presence is so overwhelming, enemies are naturally drawn towards you. At the end of your turn, you may choose to taunt all enemies within 60 feet. If they fail a wisdom saving throw against against your DC, they have disadvantage attacking any target other than you until the end of your next turn. </li>
 					<li>Spotlight: Place a 5 foot spotlight on the battlefield when you roll initiative. While standing on that spotlight, your abilities cost 1 ki point less.</li> 
 				</ul>
 				</span></div>
@@ -155,7 +155,7 @@
 
 <div class="treewrapper orange">
 	<div class="actionSkill"><img src="icons/coco-combat-idol-passive.png" />
-		<div class="description"><h2>Combat Idol</h2>Passive Skill. Increases your ki points by <em passive-mod="0" passive-base="1">0</em></div>
+		<div class="description"><h2>Combat Idol</h2>Passive Skill. Increases your health by <em passive-mod="0" passive-base="5">0</em></div>
 		<div class="passive points">0</div>
 	</div>
 	<div class="bglayer gray"></div>
@@ -167,45 +167,52 @@
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-counterstrike.svg">
-				<div class="description"><h2>Counterstrike</h2><span>As a reaction, before an attack roll is made, you can perform an attack of opportunity in response to an incoming melee attack. If your attack roll is lower than the incoming attack, you get hit, regardless of your AC. If your attack roll is higher, you avoid the attack and can perform an attack of opportunity in response. </span></div>
+				<div class="description"><h2>Counterstrike</h2><span>As a reaction, before an attack roll is made, you can perform an attack of opportunity in response to an attack directed at you within your threat range. If your attack roll is lower than the incoming attack, you get hit, regardless of your AC. If your attack roll is higher, you avoid the attack and can perform an attack of opportunity in response. </span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-still-stance.svg">
-				<div class="description"><h2>Still Stance (Stance)</h2><span>Stance. You gain 2 extra reactions while in still stance, but your movement is halved. </span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-ripple.svg">
+				<div class="description"><h2>Ripple Stance</h2><span>Stance. Whenever someone successfully strikes you in melee, you block some/all of the damage of the attack. Subtract your martial arts die + your monk level + <span class="tpScaling" tpScaling-base="0" tpScaling-mod="0" tpScaling-step="5">0</span> from the damage of the incoming melee attack. In response, you can also choose to counterattack as a reaction, dealing your normal damage plus all of the damage you blocked. This counterattack is treated as an attack of opportunity. </span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="1" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-pressure-points.svg">
-				<div class="description"><h2>Pressure Points</h2><span>Performing consecutive melee attacks against a single target builds up a stacking combo counter that can be detonated after landing a melee strike, dealing your martial arts dice in damage per stack. Missing an attack, switching targets, or not attacking the target for a turn resets the counter. The maximum number of stacks you can have is equal to <span class="tpScaling" tpScaling-base="1" tpScaling-mod="0" tpScaling-step="1">0</span>. Once expended, you can only start building stacks again at the start of your next turn. </span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-tranquil-stance.svg">
+				<div class="description"><h2>Tranquil Stance</h2><span>Stance. While in this stance, you regain health equal to your martial arts die + <span class="tpScaling" tpScaling-base="1" tpScaling-mod="0" tpScaling-step="1">0</span> at the end of your turn. Additionally, you may choose to spend up to <span class="tpScaling" tpScaling-base="1" tpScaling-mod="0" tpScaling-step="1">0</span> ki points to regain even more health at the end of your turn, recovering 1d8 health for every ki point you spend in this manner.  </span></div>
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-forestallment.svg">
 				<div class="description"><h2>Forestallment</h2><span>Enemies now provoke attacks of opportunity whenever they move into your range, in addition to whenever they leave range. They also provoke attacks of opportunity if they take any action that is not a melee attack while within a threatened zone (e.g. casting a spell, making a ranged attack, using an item, etc).</span>.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-ripple.svg">
-				<div class="description"><h2>Ripple (Stance)</h2><span>Stance. Whenever someone successfully strikes you in melee, you block some/all of the damage of the attack. Subtract <span class="tpScaling" tpScaling-base="1" tpScaling-mod="2" tpScaling-step="2">0</span>d10 + 20 from the damage of the incoming melee attack. In response, you can also choose to counterattack as a reaction, dealing your normal damage plus all of the damage you blocked. This counterattack is treated as an attack of opportunity.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-reactive-stance.svg">
+				<div class="description"><h2>Reactive Stance</h2><span>Stance. When entering reactive stance at the start of your turn, you delay and split up your turn, taking it at the end of enemy turns. While in reactive stance, you may take your move action, your action, and/or your bonus action at the end of an enemy turn, performing one, two, or all three actions. Any unused actions at the start of your next turn are lost. </span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="2" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-stance-dance.svg">
-				<div class="description"><h2>Stance Dance</h2><span>You may switch stances whenever you perform a dance. </span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-unending-flurry.svg">
+				<div class="description"><h2>Unending Flurry</h2><span>Downing a target with flurry of blows grants you an immediate action and 2 ki points. </span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-lightning-reflexes.svg">
-				<div class="description"><h2>Lightning Reflexes</h2><span>You gain 1 additional reaction per round. Additionally, you now threaten a 15 foot zone and may perform a flurry of blows as an attack of opportunity. Performing an attack of opportunity within this zone moves you to the target.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-still-stance.svg">
+				<div class="description"><h2>Still Stance</h2><span>Stance. You lose your movement action but you gain 3 additional reactions per round and the ability to perform a flurry of blows in place of an attack of opportunity. Additionally, you now threaten an area with a radius equal to half of your movement speed. Performing an attack of opportunity within this zone moves you to within melee range of the target.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-full-attack.svg">
-				<div class="description"><h2>Full Attack (Stance)</h2><span>Stance. While in this stance, you gain one extra action per turn and can attack three times instead of two when performing the attack action. However, you lose your reactions while in this stance.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-pressure-points.svg">
+				<div class="description"><h2>Pressure Points</h2><span>Your critical threat range increases to 18-20. Furthermore, whenever you land a critical strike, you may impose one of the following effects:
+				<ul>
+					<li>Delayed Damage: The target takes the same amount of damage again from your attack at the start of their next turn if they fail a constitution saving throw against your DC.</li>
+					<li>Stunning Strike: You may attempt a stunning strike for 0 ki points. The target has disadvantage on the saving throw. </li>
+					<li>Redirection: If the target fails a constitution saving throw against your DC, they must use their movement to walk in a direction of your choosing at the start of their next turn.</li>
+					<li>Five-Fingered Death: Forego the extra critical strike damage to attempt a finishing blow. If the target has 50 hp or less, they instantly die or are knocked unconscious (your choice). If not, they take no damage.</li>
+				</ul>
+				</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="3" data-invested="0" data-total="0">
-			<div class="skill push1" data-points="0" data-max="1"><img src="icons/coco-unending-flurry.svg">
-				<div class="description"><h2>Unending Flurry</h2><span>Whenever you perform a flurry of blows as a bonus action, you can continuously flurry by spending ki points. Each subsequent flurry increases the cost by 1 ki point. If the target is downed by unending flurry, you recover half of the ki points you spent using Unending Flurry.</span></div>
+			<div class="skill push1" data-points="0" data-max="1"><img src="icons/coco-hurricane-stance.svg">
+				<div class="description"><h2>Hurricane Stance</h2><span>Stance. While in this stance, the number of attacks you make doubles, increasing from 2 to 4 for your attack action and flurry of blows (from 5 to 10 if striking multiple targets with your flurry of blow). However, you lose your reactions while in this stance.</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
@@ -228,11 +235,11 @@
 	<div class="tree" unselectable="on">
 		<div class="tier" data-level="0" data-invested="0" data-total="0">
 			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-jupiter-stance.svg">
-				<div class="description"><h2>Jupiter Stance (Stance)</h2><span>Stance. You are considered two category sizes larger for the purpose of grappling, carrying, throwing, and other strength-based checks. Whenever you perform a melee strike, you can choose to knock the target back <span class="tpScaling" tpScaling-base="5" tpScaling-mod="5" tpScaling-stepFloor="2">0</span> feet if they are smaller than your effective size category should they fail a strength save against your DC. <div class="extra-text hidden">Your strength also increases to match your charisma score while in this stance.</div> </span></div>
+				<div class="description"><h2>Jupiter Stance</h2><span>Stance. You are considered two category sizes larger for the purpose of grappling, carrying, throwing, and other strength-based checks. Whenever you perform a melee strike, you can choose to knock the target back <span class="tpScaling" tpScaling-base="5" tpScaling-mod="5" tpScaling-stepFloor="2">0</span> feet if they are smaller than your effective size category should they fail a strength save against your DC. <div class="extra-text hidden">Your strength also increases to match your charisma score while in this stance.</div> </span></div>
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-lunar-stance.svg">
-				<div class="description"><h2>Lunar Stance (Stance)</h2><span>Stance. While using Lunar Stance, you become light as a feather, reducing your weight to anywhere from your normal weight to 1/1000th of your normal weight (your choice) and increasing your jump height by 10 times. You also gain the benefits of Feather Fall and Water Walk while in this stance. <div class="extra-text hidden">You may touch a willing creature and grant them the benefits of Lunar Stance for up to 1 hour for 1 ki point.</div> </span></div>
+				<div class="description"><h2>Lunar Stance</h2><span>Stance. While using Lunar Stance, you become light as a feather, reducing your weight to anywhere from your normal weight to 1/1000th of your normal weight (your choice) and increasing your jump height by 10 times. You also gain the benefits of Feather Fall and Water Walk while in this stance. <div class="extra-text hidden">You may touch a creature or object and reduce their weight while you are holding onto them in this stance. If the creature is unwilling, they must succeed on a wisdom saving throw against your DC to avoid the effects of lunar stance. </div> </span></div>
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-tidal-lock.svg">
@@ -242,15 +249,15 @@
 		</div>
 		<div class="tier" data-level="1" data-invested="0" data-total="0">
 			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-gravity-rush.svg">
-				<div class="description"><h2>Gravity Rush (Stance)</h2><span>Stance. Gravity manipulation no longer costs ki points while in this stance. <div class="extra-text hidden">You may activate Shooting Stars Stance at the same time as Gravity Rush Stance. </div></span></div>
+				<div class="description"><h2>Gravity Rush (Stance)</h2><span>Stance. Improves Gravity Manipulation stance. No longer costs a ki point per turn to maintain Gravity Manipulation. <div class="extra-text hidden">You may activate any other stance at the same time as Gravity Rush Stance. </div></span></div>
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-shooting-stars.svg">
-				<div class="description"><h2>Shooting Stars (Stance)</h2><span>Stance. You can perform ranged unarmed attacks with a 60+(gravity control*5)/300+(gravity control*25) ft range. You need rocks, debris, or other fist sized projectiles in order to use Shooting Stars. These projectiles orbit you while Shooting Stars Stance is active. <div class="extra-text hidden">As an action, you may throw a large rock/object which deals three times your melee attack damage and can knock down a target if they fail a strength save against your DC.</div></span></div>
+				<div class="description"><h2>Shooting Stars (Stance)</h2><span>Stance. You can perform ranged unarmed attacks with a <span class="tpScaling" tpScaling-base="0" tpScaling-mod="60" tpScaling-step="5">0</span>/<span class="tpScaling" tpScaling-base="0" tpScaling-mod="300" tpScaling-step="25">0</span> ft range. You need rocks, debris, or other fist sized projectiles in order to use Shooting Stars. These projectiles orbit you while Shooting Stars Stance is active. <div class="extra-text hidden">As an action, you may throw a large rock/object which deals three times your melee attack damage and can knock down a target if they fail a strength save against your DC.</div></span></div>
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-gravity-slingshot.svg">
-				<div class="description"><h2>Gravity Slingshot</h2><span>Your Deflect Missiles improves to the following: You can use your Reaction to deflect an incoming ranged weapon attack OR ranged spell attack. When you do so, the damage you take from the attack is reduced by <span class="tpScaling" tpScaling-base="1" tpScaling-mod="2" tpScaling-step="2">0</span>d10 + 20. If you reduce the damage to 0, you can spend 1 ki point to use your gravitational manipulation to slingshot it towards a target of your choice. Make a ranged attack roll. If successful, the redirected attack deals as much damage as it would have dealt to you. <div class="extra-text hidden">You can store a spell or projectile instead of launching it back immediately. You can store up to three projectiles in this manner. While stored, they orbit around you until you decide to use them. These projectiles stop orbiting whenever you are stunned, paralyzed, or unconscious.</div></span></div>
+				<div class="description"><h2>Gravity Slingshot</h2><span>Your Deflect Missiles improves to the following: You can use your Reaction to deflect an incoming ranged weapon attack OR ranged spell attack. When you do so, the damage you take from the attack is reduced by your martial arts die + your monk level + <span class="tpScaling" tpScaling-base="1" tpScaling-mod="0" tpScaling-step="5">0</span>. If you reduce the damage to 0, you can spend 1 ki point to use your gravitational manipulation to slingshot it towards a target of your choice. Make a ranged attack roll. If successful, the redirected attack deals damage equal to your melee attack + the amount of damage you blocked. <div class="extra-text hidden">No longer costs a ki point to slingshot the projectile back.</div></span></div>
 				<div class="points"></div>
 			</div>
 		</div>
@@ -264,7 +271,7 @@
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/coco-meteor-kick.svg">
-				<div class="description"><h2>Meteor Kick</h2><span>You no longer take damage from falling. Furthermore, whenever you make an attack after falling or sliding, you deal additional damage equal to the distance travelled. Roll for an additional martial arts die worth of damage per 30 feet travelled. The maximum distance for this ability is 600 feet or 20 martial arts dice, at which point you've reached terminal velocity and can no longer increase your damage. If using Jupiter Stance's or Gravity Palm's secondary effects with this attack, the target must roll against your DC with disadvantage and they are knocked back a distance equal to the normal distance * number of martial arts dice used. <div class="extra-text hidden">You now roll an additional damage dice for every 20 feet travelled instead of every 30 feet, maxing out at 400 feet. </div></span></div>
+				<div class="description"><h2>Meteor Kick</h2><span>You no longer take damage from falling. Furthermore, whenever you make an attack after falling or sliding, you deal additional damage equal to the distance travelled. Roll for an additional martial arts die worth of damage per 30 feet travelled. The maximum distance for this ability is 300 feet or 10 martial arts dice, at which point you've reached terminal velocity and can no longer increase your damage. If using Jupiter Stance's or Gravity Palm's secondary effects with this attack, the target must roll against your DC with disadvantage and they are knocked back a distance equal to the normal distance * number of martial arts dice used. <div class="extra-text hidden">You now roll an additional damage dice for every 20 feet travelled instead of every 30 feet, maxing out at 300 feet or 15 martial arts dice. </div></span></div>
 				<div class="points"></div>
 			</div>
 		</div>
