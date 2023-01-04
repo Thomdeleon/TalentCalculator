@@ -165,7 +165,7 @@
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/bluhd-belphegor.svg">
-				<div class="description"><h2>Belphegor (Archdemon)</h2><span>Once per day, you may summon Belphegor, the Archdemon of Sloth, as an action. Belphegor is a gargantuan, invisible toad-like demon, occupying a 20x15 foot square, who cannot move once summoned. He has <span class="tpScaling" tpScaling-base="0" tpScaling-mod="200" tpScaling-step="50">0</span> hit points and acts as a one-way wall. You and your allies can fire any magic or physical ability through Belphegor's body without affecting Belphegor, as if he wasn't even there. You can even walk through him, though the space is treated as difficult terrain and feels slimy to walk through. Enemies, however, cannot attack through Belphegor's body. Belphegor has 0 dexterity and will not even attempt to dodge any spells or attacks directed at him. He lasts for 10 minutes or until his hit points drop to 0. </span></div>
+				<div class="description"><h2>Belphegor (Archdemon)</h2><span>Once per day, you may summon Belphegor, the Archdemon of Sloth, as an action. Belphegor is a gargantuan, invisible toad-like demon, occupying a 20x15 foot square, who cannot move once summoned. He has <span class="tpScaling" tpScaling-base="25" tpScaling-mod="200">0</span> hit points and acts as a one-way wall. You and your designated allies can fire any magic or physical ability through Belphegor's body without affecting Belphegor, as if he wasn't even there. You can even walk through him, though the space is treated as difficult terrain and feels slimy to walk through. Non-allied creatures, however, cannot attack through Belphegor's body. Belphegor has 0 dexterity and will not even attempt to dodge any spells or attacks directed at him. He lasts for 10 minutes or until his hit points drop to 0. </span></div>
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/bluhd-eye-of-talrogg.svg">
@@ -191,7 +191,7 @@
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/bluhd-the-stewmaker.svg">
-				<div class="description"><h2>The Stewmaker (Archdemon)</h2><span>Once per day, you may summon Baba Yaga, the Stewmaker, Archdemon of Gluttony. Like all archdemons, Baba Yaga stays on the field for 10 minutes and cannot be summoned while another archdemon is on the field. Every time a creature dies within 1000 feet of Baba Yaga, their soul gets trapped in her cauldron, adding a number of soul stacks equal to half the hit dice of the creature. These souls stacks last indefinitely until used, with no limit on how many souls you can accrue. While active, Baba Yaga can perform one of the following actions on your turn, each action costing souls:
+				<div class="description"><h2>The Stewmaker (Archdemon)</h2><span>Once per day, you may summon Baba Yaga, the Stewmaker, Archdemon of Gluttony. Like all archdemons, Baba Yaga stays on the field for 10 minutes and cannot be summoned while another archdemon is on the field. Once summoned, her cauldron remains in the place it was summoned and does not move. Every time a creature dies within 1000 feet of Baba Yaga, their soul gets trapped in her cauldron, adding a number of soul stacks equal to half the hit dice of the creature. These souls stacks last indefinitely until used, with no limit on how many souls you can accrue. While active, Baba Yaga can perform one of the following actions on your turn, each action costing souls:
 				<ul>
 				<li><span class="bold-indigo">Hearty Broth:</span> Consume souls to regain hp. 1 soul stack = 1 hp. </li>
 				<li><span class="bold-indigo">Mana Soup:</span> Spend souls to cast any level 1-5 spell you know. Use the following chart to determine the soul stack cost:
@@ -302,58 +302,50 @@
 	<div class="bglayer color"></div>
 	<div class="tree" unselectable="on">
 		<div class="tier" data-level="0" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-adaptive-runes.svg">
-				<div class="description"><h2>Adaptive Runes</h2><span>Choose a damage type. You now have resistance to that damage type. Additionally, whenever you are targeted with this damage type, you charge one rune. You may only charge one rune per turn in this manner. You may change which damage type you resist during a short rest/long rest. </span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/bluhd-blood-boil.svg">
+				<div class="description"><h2>Blood Boil</h2><span>Your Corruption now applies the Blood Boil effect, poisoning the target while active (disadvantage on attack rolls and ability checks) if they fail a constitution save against your spell DC. With the Rule of Threes, your Rapid Decay effect stuns the target for 1 round if they fail a constitution save against your spell DC.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-reflective-runes.svg">
-				<div class="description"><h2>Reflective Runes</h2><span>Whenever a spell attack is directed at you, you have a 1 in 4 chance of reflecting it. If reflected, you may redirect it towards a target of your choice by making a spell attack roll.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/bluhd-autophagy.svg">
+				<div class="description"><h2>Autophagy</h2><span>At the start of every turn, you may choose to Blood Sacrifice once without using an action.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-runic-storage.svg">
-				<div class="description"><h2>Runic Storage</h2><span>Once per day, you can store a spell inside your runes and activate it at any time as a reaction. You must expend a number of charged runes equal to the spell level you're holding. This spell storage dissipates after a long rest.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/bluhd-blood-shield.svg">
+				<div class="description"><h2>Blood Shield</h2><span>All healing on you at maximum health grants you temporary health up to <span class="tpScaling" tpScaling-base="10">0</span>. This temporary health lasts for 1 minute or until expended.</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="1" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-runic-resonance.svg">
-				<div class="description"><h2>Runic Resonance</h2><span>Whenever you cast a spell, you gain a number of charged runes equal to the spell level you cast.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/bluhd-voracity.svg">
+				<div class="description"><h2>Voracity</h2><span>Soul Drain/Life Drain now attacks all targets within range.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-quicksilver-runes.svg">
-				<div class="description"><h2>Quicksilver Runes</h2><span>By spending <em data-base="3"></em> charged runes as a reaction, you gain the Freedom of Movement buff until the end of your next turn.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/bluhd-universal-donor.svg">
+				<div class="description"><h2>Universal Donor</h2><span>As an action, you may sacrifice your own health to restore allies' expended spell slots up to spell level 5. Use Blood Sacrifice health cost to determine this cost.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-runic-critical.svg">
-				<div class="description"><h2>Runic Critical</h2><span>Increases your critical multiplier by <em data-base="1"></em>. Your critical strikes also charge a number of essence runes equal to your critical multiplier.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/bluhd-blood-surge.svg">
+				<div class="description"><h2>Blood Surge</h2><span>You may use your blood to unlock the potential of any spell you cast. Whenever you roll for damage while casting a spell, you may spend an amount of health to maximize the result of that spell. Subtract the rolled amount from the maximum possible damage of the spell in order to determine how much health you must spend to use Blood Surge.</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="2" data-invested="0" data-total="0">
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-runic-blade.svg">
-				<div class="description"><h2>Runic Blade</h2><span>As a bonus action, you can spend <em data-base="6"></em>charged runes to guarantee your next attack melee attack is a critical hit.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/bluhd-exsanguinate.svg">
+				<div class="description"><h2>Exsanguinate</h2><span>(9th Level Enchantment spell. Single target. 60 foot range.) If the target creature has blood coursing through its body and has less than 125 hp, you exsanguinate it, killing it instantly with necrotic damage and gaining hp equal to half the amount of health it had remaining. If the target has more than 125 hp, the target takes 10d10 necrotic damage instead and you gain half the amount in health. If exsanguinate kills the target, you regain the spell slot used to cast it.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-spell-absorption.svg">
-				<div class="description"><h2>Spell Absorption</h2><span>By spending a number of charged runes equal to a spell that is targeting you, either directly or within its area of effect, you can attempt to counterspell it. If successful, the spell gets absorbed by your runes and can be later cast as if it were a known spell. You can only carry one absorbed spell at a time. This absorbed spell dissipates upon use or long rest.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/bluhd-hot-blooded.svg">
+				<div class="description"><h2>Hot Blooded</h2><span>Costs 1/4 of total HP. On your turn, you can expend health equal to 1/4 of your total health in order to gain an extra action. You may cast multiple spells per turn with this ability. You may only do this once per turn. You cannot use this ability if you are below 25% total health.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/dusk-hardened-runes.svg">
-				<div class="description"><h2>Hardened Runes</h2><span> Your AC and saving throws increase by <em data-base="3"></em>.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/bluhd-blood-pool.svg">
+				<div class="description"><h2>Blood Pool</h2><span>Costs 1/5th of total HP. As a reaction, you can change into a pool of blood, rendering you immune to the damage and effects of the next incoming attack or ability, unless it is a mind-affecting ability. If the incoming attack is a mind-affecting ability (ie intelligence, wisdom, or charisma saving throw), you must still roll against the spell save to resist it, although you will not take damage from its effects. You cannot use this ability if you are below 20% total health. </span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="3" data-invested="0" data-total="0">
-			<div class="skill push1" data-points="0" data-max="1"><img src="icons/dusk-arcane-avatar.svg">
-				<div class="description"><h2>Arcane Avatar</h2><span>You now have the benefits of the Arcane Exemplar Form passively. By spending <em data-base="6"></em> charged runes, you shift into an Arcane Avatar for 1 minute, gaining the following bonuses instead:
-				<ul>
-					<li>A flying speed of 60 feet</li> 
-					<li>+2 to attack and spell DC </li>
-					<li>Resistance to all damage </li> 
-					<li>A healing factor of 1d8 hp per round. </li>
-					<li>When you cast a spell of 1st level or higher, you regain hit points equal to twice the spell’s level.</li>
-				</ul>
-				You are no longer exhausted after using your Perfect Arcane Avatar and can act as soon as this form ends. Once you use this feature, you must finish a long rest before you can use it again. </span></div>
+			<div class="skill push1" data-points="0" data-max="1"><img src="icons/bluhd-blood-plague.svg">
+				<div class="description"><h2>Blood Plague</h2><span>All of your damaging spells and abilities apply blood plague if they fail a constitution saving throw against your spell DC. This debuff increases the damage the target takes by 50% from all sources until the end of your next turn. </span></div>
 				<div class="points"></div>
 			</div>
 		</div>
