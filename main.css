@@ -172,6 +172,10 @@ body.choicePage .wrapper {
   background: url("assets/skill_bg_blue_gray.png") transparent;
 }
 
+.steel .gray {
+  background: url("assets/skill_bg_steel_gray.png") transparent;
+}
+
 .purple .gray {
   background: url("assets/skill_bg_purple_gray.png") transparent;
 }
@@ -194,6 +198,10 @@ body.choicePage .wrapper {
 
 .blue .color {
   background: url("assets/skill_bg_blue.png") transparent;
+}
+
+.steel .color {
+  background: url("assets/skill_bg_steel.png") transparent;
 }
 
 .purple .color {
@@ -488,6 +496,14 @@ strong {
 
 .blue h2 {
   color: #2A87C7;
+}
+
+.steel h2 {
+  color: #A3A7B3;
+}
+
+.steel legend {
+  color: #A3A7B3;
 }
 
 .red legend {
