@@ -180,6 +180,10 @@ body.choicePage .wrapper {
   background: url("assets/skill_bg_purple_gray.png") transparent;
 }
 
+.indigo .gray {
+  background: url("assets/skill_bg_indigo_gray.png") transparent;
+}
+
 .red .gray {
   background: url("assets/skill_bg_red_gray.png") transparent;
 }
@@ -206,6 +210,10 @@ body.choicePage .wrapper {
 
 .purple .color {
   background: url("assets/skill_bg_purple.png") transparent;
+}
+
+.indigo .color {
+  background: url("assets/skill_bg_indigo.png") transparent;
 }
 
 .red .color {
@@ -431,6 +439,16 @@ legend {
                 1px 1px 0 black;
 }
 
+.bold-indigo {
+  font-weight:bold;
+  color: #5F5DCF;
+  text-shadow:
+               -1px -1px 0 black,
+                1px -1px 0 black,
+               -1px 1px 0 black,
+                1px 1px 0 black;
+}
+
 .bold-red {
   font-weight:bold;
   color: #cc0000;
@@ -520,6 +538,14 @@ strong {
 
 .purple h2 {
   color: #a859ec;
+}
+
+.indigo legend {
+  color: #5F5DCF;
+}
+
+.indigo h2 {
+  color: #5F5DCF;
 }
 
 .orange legend {
