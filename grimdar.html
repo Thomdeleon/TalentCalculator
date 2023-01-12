@@ -208,12 +208,26 @@
 				<div class="description"><h2>Smart Gun</h2><span> You gain proficiency in firearms. Furthermore, any firearm you are attuned to is now considered a smart gun, allowing you to use your intelligence in place of your dexterity for attack and damage rolls. You can attune to any firearm, even if such a firearm would normally not allow for attunement.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="3"><img src="icons/grimdar-self-study.svg">
-				<div class="description"><h2>Self-Study</h2><span> Learn any two infusions that you qualify for.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-tinkerer.svg">
+				<div class="description"><h2>Tinkerer</h2><span> The casting time of Fabricate is reduced from 10 minutes to 1 action. Additionally, you gain proficiency in Tinker Tools, along with the "Magical Tinkering" trait.
+				<p>
+				<span class="bold-teal">Magical Tinkering:</span> You learn how to invest a spark of magic into mundane objects. To use this ability, you must have tinker's tools in hand. You then touch a Tiny nonmagical object as an action and give it one of the following magical properties of your choice:
+				</p>
+				<ul>
+					<li>The object sheds bright light in a 5-foot radius and dim light for an additional 5 feet.</li>
+					<li>Whenever tapped by a creature, the object emits a recorded message that can be heard up to 10 feet away. You utter the message when you bestow this property on the object, and the recording can be no more than 6 seconds long.</li>
+					<li>The object continuously emits your choice of an odor or a nonverbal sound (wind, waves, chirping, or the like). The chosen phenomenon is perceivable up to 10 feet away.</li>
+					<li>A static visual effect appears on one of the object's surfaces. This effect can be a picture, up to 25 words of text, lines and shapes, or a mixture of these elements, as you like.</li>
+				</ul>
+				<p>
+				The chosen property lasts indefinitely. As an action, you can touch the object and end the property early. You can bestow magic on multiple objects, touching one object each time you use this feature, though a single object can only bear one property at a time. The maximum number of objects you can affect with this feature at one time is equal to your Intelligence modifier (minimum of one object). If you try to exceed your maximum, the oldest property immediately ends, and then the new property applies.
+				</p>
+				
+				</span></div>
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-magical-efficiency.svg">
-				<div class="description"><h2>Magical Efficiency</h2><span> The number of uses for all items with charges that are attuned to you increases by 1.</span></div>
+				<div class="description"><h2>Magical Efficiency</h2><span> The number of uses for all items that are attuned to you increases by 1. Additionally, if the item requires a dice roll to restore expended charges, maximize that roll. </span></div>
 				<div class="points"></div>
 			</div>
 		</div>
@@ -222,23 +236,23 @@
 				<div class="description"><h2>Magical Strike</h2><span> Whenever you cast a spell or cantrip, you may shoot a firearm as a bonus action.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-sphere-of-annihilation.svg">
-				<div class="description"><h2>Sphere of Annihilation (Cantrip)</h2><span> Requires concentration. You have a Sphere of Anniliation under your control that you can summon as an action. While concentrating on it, you can move this sphere up to 30 feet as a bonus action. Any creature within the path of this sphere must make a dexterity saving throw against your spell save DC or take 4d10 force damage (scale with cantrip). Any non-artifact object is obliterated by this sphere and a creature who dies to this is wholly absorbed by it, as the spell disintegrate.</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-cram-session.svg">
+				<div class="description"><h2>Cram Session</h2><span> Every morning while preparing spells, you may choose to temporarily learn three artificer infusions that you qualify for. You lose knowledge of these three infusions upon long rest.</span></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-extra-attunement.svg">
-				<div class="description"><h2>Extra Attunement</h2><span> Your maximum attunement slots increases by 2</span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-spell-storage.svg">
+				<div class="description"><h2>Spell Storage</h2><span> <span class="tpScaling" tpScaling-base="1" tpScaling-step="2">0</span> times per day, you can imbue any item with a spell you can cast level 5th and below. Any creature can cast the spell stored in this item as if it were a spell scroll. You must expend the spell slot to store the specified spell inside of an item and the item loses whatever spell it is storing upon long rest. </span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="2" data-invested="0" data-total="0">
 			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-railgun.svg">
-				<div class="description"><h2>Railgun (Firearm)</h2><div>Magical firearm. Requires attunement. Range 200/600. This magical firearm is powered by the ambient energy of your magical spells. The railgun has 9 power levels. Starting at 0, every spell you cast charges the power level of your railgun by an amount equal to the level of the spell you cast. Cantrips and spells cast using Signature Spell are so efficient, they do not provide any ambient charge for the Railgun. Whenever you fire a shot or whenver 1 minute elapses since you fired your last shot, the charge level decays by 1 per round until it reaches 0. </div><br>
-				<div>The Railgun is a +3 ranged piercing weapon that deals 2d12+5 damage at charge level 1, and an additional 1d12+1 damage for every charge level above 1, to a maximum of 10d12+13 at charge level 9. The railgun is so complex, it is only usable by those with the talent to utilize it.</div></div>
+				<div class="description"><h2>Railgun (Firearm)</h2><div>Magical firearm. Requires attunement. Range 200/600. This magical firearm is powered by the ambient energy of your magical spells. The railgun has 10 power levels. Starting at power level 0, every spell you cast charges the power level of your railgun by an amount equal to the level of the spell you cast. Cantrips and spells cast using Signature Spell are so efficient, they do not provide any ambient charge for the Railgun. Firing a shot resets the charge level to 0. Whenver 1 minute elapses since you fired your last shot, the charge level decays by 1 per round until it reaches 0. </div>
+				<p>The Railgun is a ranged piercing firearm that deals xd12+x damage, where x is the charge level, and it has a critical strike multiplier of x3. At maximum charge (level 10), the railgun pierces through all targets in a line. The railgun is so complex, it is only usable by those with the talent to utilize it.</p></div>
 				<div class="points"></div>
 			</div>
-			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-replicator.svg">
-				<div class="description"><h2>Replicator</h2><span> You learn 8 new infusions drawn from the Replicate Magic Item list. Choose 2 items from the 2nd level, 6th level, 10th level, and 14th level Replicable Items lists. You may change which 8 Magic Items you know how to replicate on a long rest. Upon doing so, any existing replicated magical items lose their infusions, returning to mundane items. </span></div>
+			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-magic-item-mastery.svg">
+				<div class="description"><h2>Magic Item Mastery</h2><span> Your maximum attunement slots increases by 3. You can now attune/deattune to any number of magic items while taking a short or long rest. Additionally, you also ignore all class, race, spell, and level requirements when attuning to a magic item.</span></div>
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/grimdar-antimagic-hardening.svg">
@@ -248,15 +262,14 @@
 		</div>
 		<div class="tier" data-level="3" data-invested="0" data-total="0">
 			<div class="skill push1" data-points="0" data-max="1"><img src="icons/grimdar-savant.svg">
-				<div class="description"><h2>Savant</h2><span>You gain the following traits:
+				<div class="description"><h2>Savant</h2><span> You gain the following traits/spells:
 				<ul>
-					<li>Your maximum number of attunement slots increases by 3.</li> 
-					<li>You may change which infusions you know on a long rest. Upon doing so, any items with existing infusion return to their original mundane state. </li>
-					<li>You gain a +1 bonus to all saving throws for each magic item you are attuned to.</li> 
-					<li>You ignore all class, race, spell, and level requirements when attuning to a magic item. </li>
-					<li>You can attune/deattune to any number of magic items while taking a short or long rest.</li>
-					<li>You gain the "Magical Tinkering" and the "Right Tool for the Job" traits of the Artificer class. </li>
-					<li>You gain proficiency in Tinker Tools, allowing you to tinker with/repair/hack magitech. This skill uses intelligence.</li>
+					<li><span class="bold-teal">Magic Shield:</span> You gain a +1 bonus to all saving throws for each magic item you are attuned to. </li> 
+					<li><span class="bold-teal">Target Dummmy:</span> As a reaction when you are hit by an attack, you can drop one of your magical attunements to create a fake version of yourself that takes the hit while you teleport away a distance equal to your speed. </li>
+					<li><span class="bold-teal">Contingent Attunement:</span> You gain a new type of infusion. For one attunement slot, you can prepare another spell contingency, as the spell Contingency.</li> 
+					<li><span class="bold-teal">Body Augmentation:</span> You gain a new type of infusion. For one attunement slot, you increase any core attribute (str/dex/etc) by +4, up to the limit of 24.</li>
+					<li><span class="bold-teal">Shrink Item:</span> (7th level transmutation spell, casting time 1 action, range: touch). Shrink an item to 1/16th of its size. This lasts for 1 day if cast at 7th level, 7 days if cast at 8th level, and 30 days if cast at 9th level. While an item is shrunk, it can be unshrunk and reshrunk at any time using a command word of your choosing. Does not work on intelligent magic items or magical items with extra dimensional space.</li>
+					<li><span class="bold-teal">Sphere of Annihilation (Conjuration):</span> Cantrip. Requires concentration. You have a Sphere of Anniliation under your control that you can summon as a bonus action. While concentrating on it, you can move this sphere up to 30 feet as a bonus action. Any creature within the path of this sphere must make a dexterity saving throw against your spell save DC or take xd10 force damage (increases based on cantrip damage). A single creature may only take damage from this cantrip once per bonus action. Any non-artifact object is obliterated by this sphere and a creature who dies to this is wholly absorbed by it, as the spell disintegrate.</li>
 				</ul>
 				</span></div>
 				<div class="points"></div>

@@ -469,6 +469,16 @@ legend {
                 1px 1px 0 black;
 }
 
+.bold-teal {
+  font-weight:bold;
+  color: #37c3c3;
+  text-shadow:
+               -1px -1px 0 black,
+                1px -1px 0 black,
+               -1px 1px 0 black,
+                1px 1px 0 black;  
+}
+
 .bold-green {
   font-weight:bold;
   color: #0B0;
