@@ -449,6 +449,16 @@ legend {
                 1px 1px 0 black;
 }
 
+.bold-steel {
+  font-weight:bold;
+  color: #A3A7B3;
+  text-shadow:
+               -1px -1px 0 black,
+                1px -1px 0 black,
+               -1px 1px 0 black,
+                1px 1px 0 black;
+} 
+
 .bold-purple {
   font-weight:bold;
   color: #a859ec;
