@@ -106,7 +106,7 @@
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/bluhd-dark-energy.svg">
-				<div class="description"><h2>Dark Energy</h2><span>(Level 5 Evocation). Cast any evocation spell level that deals damage on any spell list 4th or lower. The damage type of this spell is force or psychic (your choice) instead of its original damage type. <div class="extra-text hidden"><h2>Dark Matter</h2> (Level 5 Conjuration). Cast any conjuration spell that deals damage on any spell list 4th or lower. The damage type of this spell is force or psychic (your choice) instead of its original damage type.</div></span></div>
+				<div class="description"><h2>Dark Energy</h2><span>(Level 6 Evocation). Cast any evocation spell level that deals damage on any spell list 5th or lower. The damage type of this spell is force or psychic (your choice) instead of its original damage type and is cast as if using a 5th level spell slot. <div class="extra-text hidden"><h2>Dark Matter</h2> (Level 6 Conjuration). Cast any conjuration spell that deals damage or summons creatures on any spell list 5th or lower. The damage type of this spell or summoned creature is force or psychic (your choice) instead of its original damage type and is cast as if using a 5th level spell slot.</div></span></div>
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/bluhd-mind-sear.svg">
@@ -295,7 +295,7 @@
 
 <div class="treewrapper red">
 	<div class="actionSkill"><img src="icons/bluhd-blood-magic-passive.png" />
-		<div class="description"><h2>Blood Magic</h2>Passive Skill. When you are below <em passive-mod="0" passive-base="10">0</em>% health, you heal <em passive-mod="0" passive-base="1">0</em> health per round until you reach <em passive-mod="0" passive-base="10">0</em>% health.</div>
+		<div class="description"><h2>Blood Magic</h2>Passive Skill. When you are below <em passive-mod="0" passive-base="10">0</em>% health, you heal <em passive-mod="0" passive-base="1">0</em> health per round until you reach <em passive-mod="0" passive-base="10">0</em>% health. This passive ceases to function if you drop to 0 hp or lower. Your health regeneration is magical in nature and will be suppressed by anything that suppresses magic.</div>
 		<div class="passive points">0</div>
 	</div>
 	<div class="bglayer gray"></div>
@@ -335,17 +335,23 @@
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/bluhd-hot-blooded.svg">
-				<div class="description"><h2>Hot Blooded</h2><span>Costs 1/4 of total HP. On your turn, you can expend health equal to 1/4 of your total health in order to gain an extra action. You may cast multiple spells per turn with this ability. You may only do this once per turn. You cannot use this ability if you are below 25% total health.</span></div>
+				<div class="description"><h2>Hot Blooded</h2><span>Costs 1/4 of total HP. On your turn, you can expend health equal to 1/4 of your total health in order to gain an extra action. You may cast multiple spells per turn with this ability. You may only do this once per turn. You cannot use this ability if you are at or below 25% total health.</span></div>
 				<div class="points"></div>
 			</div>
 			<div class="skill" data-points="0" data-max="1"><img src="icons/bluhd-blood-pool.svg">
-				<div class="description"><h2>Blood Pool</h2><span>Costs 1/5th of total HP. As a reaction, you can change into a pool of blood, rendering you immune to the damage and effects of the next incoming attack or ability, unless it is a mind-affecting ability. If the incoming attack is a mind-affecting ability (ie intelligence, wisdom, or charisma saving throw), you must still roll against the spell save to resist it, although you will not take damage from its effects. You cannot use this ability if you are below 20% total health. </span></div>
+				<div class="description"><h2>Blood Pool</h2><span>Costs 1/5th of total HP. As a reaction, you can change into a pool of blood, rendering you immune to the damage and effects of the next incoming attack or ability, unless it is a mind-affecting ability. If the incoming attack is a mind-affecting ability (ie intelligence, wisdom, or charisma saving throw), you must still roll against the spell save to resist it, although you will not take damage from its effects. You cannot use this ability if you are at or below 20% total health.  </span></div>
 				<div class="points"></div>
 			</div>
 		</div>
 		<div class="tier" data-level="3" data-invested="0" data-total="0">
-			<div class="skill push1" data-points="0" data-max="1"><img src="icons/bluhd-blood-plague.svg">
-				<div class="description"><h2>Blood Plague</h2><span>All of your damaging spells and abilities apply blood plague if they fail a constitution saving throw against your spell DC. This debuff increases the damage the target takes by 50% from all sources until the end of your next turn. </span></div>
+			<div class="skill push1" data-points="0" data-max="1"><img src="icons/bluhd-blood-magus.svg">
+				<div class="description"><h2>Blood Magus</h2><span>You gain the following traits:
+				<ul>
+					<li><span class="bold-red">Blood Plague:</span> All of your damaging spells and abilities apply blood plague if they fail a constitution saving throw against your spell DC. This debuff makes the target vulnerable to the next damaging spell or attack they receive from any source, causing it to take double damage. Once afflicted with Blood Plague, the target cannot be affected by Blood Plague again for 1 minute. </li>
+					<li><span class="bold-red">Deathless:</span> Your health regeneration continues even when your health drops to 0 or lower. While your health regeneration is active, you only need to make one death saving throw every time you drop to 0.</li>
+					<li><span class="bold-red">Malediction:</span> Costs 1/5th of total HP. You can now restore a level 6th spell slot with Blood Sacrifice. You cannot use this ability if you are at or below 20% total health.</li>
+				</ul>
+				</span></div>
 				<div class="points"></div>
 			</div>
 		</div>
